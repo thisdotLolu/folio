@@ -1,2 +1,13 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+import '../app.css'
+import Navbar from "$lib/components/navbar.svelte";
+import Hero from '$lib/components/hero.svelte';
+</script>
+
+
+
+<div class="max-w-[1300px] mx-auto flex flex-col items-center justify-start min-h-screen">
+<Navbar/>
+<Hero/>
+</div>
+

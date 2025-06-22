@@ -1,0 +1,34 @@
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Liter&family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+
+@theme inline{
+  --font-inter: "Liter", sans-serif;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-fadein {
+	animation: fadein 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
