@@ -2,6 +2,8 @@
     import { tweened } from 'svelte/motion';
     import me from '../assets/me/me.jpg'
 
+	export let isOverlayVisible;
+
     const menuItems: {
     path: string;
     label: string;
@@ -12,6 +14,7 @@
   ];
 
   import { onMount } from 'svelte';
+  import clsx from 'clsx';
 
 let greetings: string[] = [];
 let currentGreeting = '';
@@ -97,9 +100,7 @@ onMount(async () => {
 
 </script>
 
-<div class="font-inter w-full px-10
-h-[60px] py-[10px] fixed left-0 top-0 z-50
-bg-white/10 backdrop-blur-xl shadow-lg border-b border-white/20 rounded-b-lg">
+<div class="font-inter w-full px-10 h-[60px] py-[10px] fixed left-0 top-0 z-50 bg-white/10 backdrop-blur-xl shadow-lg border-b border-white/20">
 <div class='!max-w-[1200px] flex items-center justify-between mx-auto'>
     <div class='flex items-center gap-1 h-full'>
         <a href='/'>
@@ -110,8 +111,8 @@ bg-white/10 backdrop-blur-xl shadow-lg border-b border-white/20 rounded-b-lg">
 			/>    
 		</a>
 		
-        <div class='text-[1.4rem] tracking-[-1px] text-[#181b21]'>lolu/<span class='text-[#7a8293]'>david</span>/lu .</div>
-        &nbsp;•&nbsp;
+        <div class={clsx('text-[1.4rem] tracking-[-1px] ', isOverlayVisible?'text-[#d3d3d3]':'text-[#181b21]')}>lolu/<span class='text-[#7a8293]'>david</span>/lu .</div>
+        <span class={isOverlayVisible?'text-[#d3d3d3]':'text-[#181b21]'}>&nbsp;•&nbsp;</span>
         <span
         style="opacity: {$fadeOpacity}"
         class="transition-opacity duration-500 ease-in-out block text-[#7a8293]"
@@ -133,7 +134,7 @@ bg-white/10 backdrop-blur-xl shadow-lg border-b border-white/20 rounded-b-lg">
         "
         href={item.path}
       >
-        <span class="relative z-10 text-[#181b21] transition-colors duration-300 ease-in-out hover:text-white">
+        <span class={clsx("relative z-10 transition-colors duration-300 ease-in-out hover:text-white",isOverlayVisible?'text-[#d3d3d3]':'text-[#181b21]')}>
           {item.label}
         </span>
       </a>

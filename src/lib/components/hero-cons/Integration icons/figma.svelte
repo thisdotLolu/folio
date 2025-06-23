@@ -1,4 +1,4 @@
-<div class="border-[#fff] border-[2px] rotate-3 rounded-sm shadow-[3px_3px_10px_2px_rgba(0,0,0,0.2)] h-fit w-fit">
+<div class="bg-white border-[#fff] border-[2px] rotate-3 rounded-sm shadow-[3px_3px_10px_2px_rgba(0,0,0,0.2)] h-fit w-fit">
 <svg width="18" height="18" viewBox="0 0 32 38" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_510_10053)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M16 16C16 13.5147 18.0147 11.5 20.5 11.5C22.9853 11.5 25 13.5147 25 16C25 18.4853 22.9853 20.5 20.5 20.5C18.0147 20.5 16 18.4853 16 16Z" fill="#1ABCFE"/>

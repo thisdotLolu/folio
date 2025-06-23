@@ -18,9 +18,9 @@ import { tweened } from "svelte/motion";
     if (!fadeStart) return;
 
     const scrollY = window.scrollY;
-    const maxFadeDistance = 100;
+    const maxFadeDistance = 10;
     const startScroll = triggerSection.offsetTop;
-    const fadeValue = Math.min(Math.max((scrollY - startScroll) / maxFadeDistance, 0), 1);
+    const fadeValue = Math.min(Math.max((scrollY - startScroll) / maxFadeDistance, 10), 1);
     overlayOpacity.set(fadeValue);
   }
 
@@ -43,23 +43,29 @@ import { tweened } from "svelte/motion";
   });
 
 
-let activeTab='Development'
+let activeTab='Development';
+$: isOverlayVisible = $overlayOpacity > 0;
+$: overlayIntensity = $overlayOpacity;
+
+
 </script>
 
 <div class="relative min-h-screen w-full overflow-x-hidden">
   <div
     class="fixed top-0 left-0 w-full h-full z-[-1] pointer-events-none"
-    style="background-color: #222834; opacity: {$overlayOpacity}; transition: opacity 0.3s ease;"
+    style="background-color: #000; opacity: {$overlayOpacity}; transition: opacity 0.3s ease;"
   ></div>
 
   <div class="relative z-10 max-w-[1300px] mx-auto flex flex-col items-center justify-start">
-    <Navbar />
+    <Navbar 
+    bind:isOverlayVisible
+    />
     <Hero />
     <div class="mt-[100px] flex flex-col items-center justify-center w-full px-10">
       <Subnav bind:activeTab />
       <Projects {activeTab} />
     </div>
-    <section id="about" class="h-[1700px] bg-transparent" bind:this={triggerSection}>
+    <section id="about" class="bg-transparent my-[100px] h-[1000px] w-full px-10" bind:this={triggerSection}>
       <About/>
     </section>
   </div>
