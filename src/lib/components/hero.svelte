@@ -1,10 +1,10 @@
 <script lang='ts'>
   import { ArrowUpRight, Mail } from "@lucide/svelte";
-import DesignerSpan from "./hero-cons/designer-span.svelte";
+  import DesignerSpan from "./hero-cons/designer-span.svelte";
   import Behance from "./hero-cons/Integration icons/behance.svelte";
   import Github from "./hero-cons/Integration icons/github.svelte";
   import Linkedin from "./hero-cons/Integration icons/linkedin.svelte";
-import Span from "./hero-cons/span.svelte";
+  import Span from "./hero-cons/span.svelte";
   import Discord from "./hero-cons/Integration icons/discord.svelte";
   import Telegram from "./hero-cons/Integration icons/telegram.svelte";
   import XIcon from './hero-cons/Integration icons/X_icon.svg';
@@ -14,11 +14,11 @@ const links = [
   {name:'Github',logo:Github,link:'https://github.com/thisdotlolu'},
   {name:'Behance',logo:Behance,link:'https://behance.com/loludavid'},
   {name:'LinkedIn',logo:Linkedin,link:'https://www.linkedin.com/in/ebe-david-17b6921b0/'},
-  {name:'X',logo:XIcon,link:'https://www.linkedin.com/in/ebe-david-17b6921b0/'},
+  {name:'X',logo:XIcon,link:'https://x.com/dexterrrrX'},
   {name:'Telegram',logo:Telegram,link:'https://t.me/lolu_xz'},
   {name:'Discord',logo:Discord,link:'https://discordapp.com/users/lolu0000/'},
   // {name:'Contra',logo:,link:'https://www.linkedin.com/in/ebe-david-17b6921b0/'},
-  {name:'Fiverr',logo:Fiverr,link:'https://www.linkedin.com/in/ebe-david-17b6921b0/'},
+  {name:'Fiverr',logo:Fiverr,link:'https://www.fiverr.com/lolu18'},
 ]
   </script>
 
@@ -37,8 +37,12 @@ const links = [
         class="mb-[20px] leading-[40px] animation: fadeInUp tracking-[-1px] text-[2rem]">
           I'm a <span class='text-[#7a8293] inline-flex items-center'>Developer <Span/> </span> and <span class='text-[#7a8293] inline-flex items-center'>Designer <DesignerSpan/> </span> focused on delivering <span class="text-[#ccd0d8] bg-[#000]">exceptional</span> user experiences while implementing  <span class='text-[#ccd0d8] bg-[#000]'>complex software</span> functionality with clean, maintainable, and scalable code.
         </div>
-        <p class='text-[#7a8293] mt-[10px]'>With over 5 years of experience in software development and ui/ux design across a full spectrum of verticals, solving product and business problems using tools including Figma,Nocode web and e-comms store builders,Typescript,React/Nextjs,React Native,Sveltekit,Nodejs and Databases.</p>
-        <div class="mt-[30px] w-full flex items-center">
+        <p 
+        style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {3 * 0.2}s; opacity: 0; transform: translateY(10px);"
+        class='text-[#7a8293] mt-[10px]'>With over 5 years of experience in software development and UI/UX design across a broad range of industries, I solve product and business problems using tools such as Figma, no-code web and e-commerce store builders, TypeScript, React/Next.js, React Native, SvelteKit, Node.js, and various databases.</p>
+        <div 
+        style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {4 * 0.2}s; opacity: 0; transform: translateY(10px);"
+        class="mt-[30px] w-full flex items-center">
         <a 
         target="_blank"
         href='mailto:davidebe63@gmail.com'

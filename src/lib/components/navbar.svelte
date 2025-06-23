@@ -1,5 +1,5 @@
 <script lang='ts'>
-  import { tweened } from 'svelte/motion';
+    import { tweened } from 'svelte/motion';
     import me from '../assets/me/me.jpg'
 
     const menuItems: {
@@ -8,11 +8,10 @@
   }[] = [
     { path: "#work", label: "Work"},
     { path: "#about", label: "About me"},
-    { path: "#contact", label: "Contact"},
+    { path: "#dump", label: "Dump"},
   ];
 
   import { onMount } from 'svelte';
-  import { cubicOut } from 'svelte/easing';
 
 let greetings: string[] = [];
 let currentGreeting = '';
@@ -100,14 +99,17 @@ onMount(async () => {
 
 <div class="font-inter w-full px-10
 h-[60px] py-[10px] fixed left-0 top-0 z-50
-bg-white/10 backdrop-blur-md shadow-lg border-b border-white/20 rounded-b-lg">
+bg-white/10 backdrop-blur-xl shadow-lg border-b border-white/20 rounded-b-lg">
 <div class='!max-w-[1200px] flex items-center justify-between mx-auto'>
     <div class='flex items-center gap-1 h-full'>
-        <img
-        class='border-[#fff] border-[2px] rounded-md h-[35px] w-[35px] object-cover shadow-md'
-        src={me}
-        alt='Lolu David'
-        />    
+        <a href='/'>
+			<img
+			class='border-[#fff] border-[2px] rounded-md h-[35px] w-[35px] object-cover shadow-md'
+			src={me}
+			alt='Lolu David'
+			/>    
+		</a>
+		
         <div class='text-[1.4rem] tracking-[-1px] text-[#181b21]'>lolu/<span class='text-[#7a8293]'>david</span>/lu .</div>
         &nbsp;•&nbsp;
         <span

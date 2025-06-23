@@ -24,6 +24,7 @@
 	"dependencies": {
 		"@lucide/svelte": "^0.519.0",
 		"@tailwindcss/vite": "^4.1.10",
+		"clsx": "^2.1.1",
 		"tailwindcss": "^4.1.10",
 		"tailwindcss-font-inter": "^4.0.0"
 	}
