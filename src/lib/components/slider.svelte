@@ -1,11 +1,12 @@
 <script>
     import { carouselData } from "$lib/dumpData";
   </script>
-  <div class='slider'>
+  <div class='slider bg-black'>
       <div class='slide-track'>
           {#each carouselData as dump, index}
           <div class='slide'>
               <img 
+              class=''
               alt='dump'
               src={dump}/>
           </div>
@@ -27,7 +28,7 @@
   
       .slide-track {
           display: flex;
-          animation: scroll 100s linear infinite;
+          animation: scroll 300s linear infinite;
           gap: 20px;
       }
   
@@ -53,6 +54,7 @@
           height: auto;
           object-fit: contain;
           display: block;
+          border-radius: 10px;
       }
   
       @media screen and (max-width: 770px) {

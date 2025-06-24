@@ -9,6 +9,7 @@ import { tweened } from "svelte/motion";
   import { onMount } from "svelte";
   import About from '$lib/components/about.svelte';
   import Lenis from 'lenis';
+  import Footer from '$lib/components/footer.svelte';
 
   const overlayOpacity = tweened(0, { duration: 300, easing: cubicOut });
   let triggerSection: HTMLElement;
@@ -25,15 +26,28 @@ import { tweened } from "svelte/motion";
     overlayOpacity.set(fadeValue);
   }
 
+  function smoothScrollTo(elementId: string) {
+  const element = document.getElementById(elementId.replace('#', ''));
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    });
+  }
+}
+
+
+
   onMount(() => {
-    // const lenis = new Lenis();
+    const lenis = new Lenis();
 
-    // function raf(time: number) {
-    //   lenis.raf(time);
-    //   requestAnimationFrame(raf);
-    // }
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
 
-    // requestAnimationFrame(raf);
+    requestAnimationFrame(raf);
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -54,8 +68,10 @@ import { tweened } from "svelte/motion";
 
 
 let activeTab='Development';
-$: isOverlayVisible = $overlayOpacity > 0;
+$: isOverlayVisible = $overlayOpacity > 0 ;
 $: overlayIntensity = $overlayOpacity;
+
+$:console.log($overlayOpacity)
 
 
 </script>
@@ -68,10 +84,13 @@ $: overlayIntensity = $overlayOpacity;
 
   <div class="relative z-10 max-w-[1300px] mx-auto flex flex-col items-center justify-start">
     <Navbar 
+    on:navigate={(event) => smoothScrollTo(event.detail.hash)}
     bind:isOverlayVisible
     />
     <Hero />
-    <div class="mt-[100px] flex flex-col items-center justify-center w-full px-10">
+    <div 
+    id='work'
+    class="mt-[100px] flex flex-col items-center justify-center w-full px-10">
       <Subnav bind:activeTab />
       <Projects {activeTab} />
     </div>
@@ -79,5 +98,8 @@ $: overlayIntensity = $overlayOpacity;
   <section id="about" class="bg-transparent my-[100px] h-[1000px] w-full" bind:this={triggerSection}>
     <About/>
   </section>
+  <div class="mt-[420px] pt-[200px] bg-[black]">
+  <Footer/>
+</div>
 </div>
 

@@ -5,6 +5,7 @@
   import { designProjects, devProjects, type DesignProject, type DevProject } from '$lib/projectData';
   import { ExternalLink, Link, Link2Off, MoveLeft } from '@lucide/svelte';
   import { browser } from "$app/environment";
+  import { goto } from '$app/navigation';
 
 
   let projectId: string;
@@ -24,15 +25,31 @@
   $: shortDescription = project?.shortDescription || '';
   $: tag = project?.tag || 'Design';
 
+  function smoothScrollTo(elementId: string) {
+  const element = document.getElementById(elementId.replace('#', ''));
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    });
+  }
+}
 
     function nav_back() {
         if (browser) window.history.back();
+        goto('/')
+
     }
+
+    
 </script>
 
 <div class='font-inter bg-white w-full h-full'>
   <div class="relative z-10 max-w-[1300px] mx-auto flex flex-col items-center justify-start">
-    <Navbar/>
+    <Navbar
+    on:navigate={(event) => smoothScrollTo(event.detail.hash)}
+    />
     
     {#if project}
       <div class="w-full p-8 pt-[100px] max-w-[900px] mx-auto">

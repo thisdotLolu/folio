@@ -33,3 +33,16 @@
   }
 }
 
+*::-webkit-scrollbar {
+  scrollbar-color: #999 #333;
+}
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb { 
+  background: #999;
+}
+*::-webkit-scrollbar-track { 
+  background: #FFF5;
+}

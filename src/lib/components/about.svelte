@@ -15,13 +15,12 @@
   import Typescript from "./hero-cons/typescript.svelte";
 
 import { register } from 'swiper/element/bundle';
-  import type { ChangeEventHandler } from "svelte/elements";
   import Slider from "./slider.svelte";
 register();
  const spaceBetween = 10;
   const onProgress = (e: CustomEvent<[swiper: any, progress: number]>) => {
-    const [swiper, progress] = e.detail;
-    console.log(progress)
+  const [swiper, progress] = e.detail;
+    console.log(progress);
   };
 
 
@@ -60,11 +59,6 @@ register();
             space-between={spaceBetween}
             centered-slides={true}
             autoplay={true}
-            breakpoints={{
-              768: {
-                slidesPerView: 1,
-              },
-            }}
             on:swiperprogress={onProgress}
           >
             <swiper-slide
@@ -97,8 +91,11 @@ register();
     </div>
 </div>
 
-<div class='w-screen mt-[40px]'>
+<div 
+id='dump'
+class='w-screen mt-[40px]'>
     <p class='text-[#7a8293] mb-[10px] max-w-[1300px] mx-auto px-10 text-[3rem]'>Dumps</p>
     <p class='text-[#fff] max-w-[1300px] mx-auto px-10'>Here you can find random ui/ux design related stuff i worked on during my free time</p>
     <Slider/>
 </div>
+
