@@ -18,11 +18,14 @@ const menuItems: {
 
 import { onMount } from 'svelte';
 import clsx from 'clsx';
+import { Menu } from '@lucide/svelte';
+import MobileNav from './mobile-nav.svelte';
 
 let greetings: string[] = [];
 let currentGreeting = '';
 let greetingIndex = 0;
 let fadeOpacity = tweened(1, { duration: 100 });
+$:isActive=false;
 
 function handleNavClick(event: MouseEvent, path: string) {
   event.preventDefault();
@@ -38,6 +41,18 @@ function getTimePeriod(): 'morning' | 'afternoon' | 'evening' {
   else if (hour < 18) return 'afternoon';
   else return 'evening';
 }
+
+  function smoothScrollTo(elementId: string) {
+  const element = document.getElementById(elementId.replace('#', ''));
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    });
+  }
+}
+
 
 onMount(async () => {
   const period = getTimePeriod();
@@ -91,6 +106,8 @@ onMount(async () => {
 
   greetings = greetingsMap[period];
   currentGreeting = greetings[greetingIndex];
+  console.log("isActive", isActive);
+
 
   const loop = async () => {
     while (true) {
@@ -109,7 +126,7 @@ onMount(async () => {
 });
 </script>
 
-<div class="font-inter w-full px-10 h-[60px] py-[10px] fixed left-0 top-0 z-50 bg-white/10 backdrop-blur-xl shadow-lg border-b border-white/20">
+<div class="font-inter w-full md:px-10 px-2 h-[60px] py-[10px] fixed left-0 top-0 z-50 bg-white/10 backdrop-blur-xl shadow-lg border-b border-white/20">
   <div class='!max-w-[1200px] flex items-center justify-between mx-auto'>
     <div class='flex items-center gap-1 h-full'>
       <a href='/'>
@@ -120,19 +137,19 @@ onMount(async () => {
         />    
       </a>
       
-      <div class={clsx('text-[1.4rem] tracking-[-1px] ', isOverlayVisible?'text-[#d3d3d3]':'text-[#181b21]')}>
+      <div class={clsx('md:text-[1.4rem] text-[1.1rem] tracking-[-1px] ', isOverlayVisible?'text-[#d3d3d3]':'text-[#181b21]')}>
         lolu/<span class='text-[#7a8293]'>david</span>/lu .
       </div>
       <span class={isOverlayVisible?'text-[#d3d3d3]':'text-[#181b21]'}>&nbsp;•&nbsp;</span>
       <span
         style="opacity: {$fadeOpacity}"
-        class="transition-opacity duration-500 ease-in-out block text-[#7a8293]"
+        class="transition-opacity duration-500 ease-in-out block text-[#7a8293] md:text-[1rem] text-[.8rem] md:mt-0 mt-[4px]"
       >
         {currentGreeting}
       </span>
     </div>
  
-    <div class="w-[40%] flex justify-end items-center gap-6">
+    <div class="hidden w-[40%] md:flex justify-end items-center gap-6">
       {#each menuItems as item, index}
         <a 
           class="
@@ -152,5 +169,21 @@ onMount(async () => {
         </a>
       {/each}
     </div>
+
+    <button
+         on:click={()=>isActive = !isActive}
+            class='md:hidden block'>
+                <Menu
+                size={30}
+                className='text-[#fff]' 
+                />
+            </button>
+            
+          {#if isActive}
+                <MobileNav 
+                on:navigate={(event) => smoothScrollTo(event.detail.hash)}
+                bind:isActive
+                />
+          {/if}
   </div>
 </div>

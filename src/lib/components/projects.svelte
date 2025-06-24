@@ -7,7 +7,7 @@
 <div class='w-full mt-[20px] pb-[20px]'>
     <p class='my-6 text-[1.3rem] tracking-[-.5px] w-full text-center'>Selected Works</p>
     {#if activeTab === 'Development'}
-    <div class='w-full grid grid-cols-3 place-items-center gap-5'>
+    <div class='w-full grid lg:grid-cols-3 grid-cols-1 place-items-center gap-5'>
         {#each devProjects as project,index}
         <Project
         img={project.img}
@@ -19,7 +19,7 @@
        {/each}
     </div>
     {:else if activeTab === 'Design'}
-    <div class='w-full grid grid-cols-3 place-items-center gap-5'>
+    <div class='w-full grid lg:grid-cols-3 grid-cols-1 place-items-center gap-5'>
         {#each designProjects as project,index}
         <Project
         img={project.img}

@@ -23,8 +23,12 @@
           place-items: center;
           overflow: hidden;
           margin-top: 50px;
-          padding-bottom: 50px;
+          background-color: black;
       }
+
+      .slide-track:hover {
+  animation-play-state: paused;
+}
   
       .slide-track {
           display: flex;
@@ -60,17 +64,31 @@
       @media screen and (max-width: 770px) {
           .slider {
               margin-top: -23px;
-              height: 140px;
+              height: 540px;
           }
           
           .slide {
-              max-height: 120px;
+              height: fit-content;
+              width: fit-content;
           }
           
           img {
-              max-height: 120px;
-              width: auto;
+              height: 400px;
+              width: 100%;
               border-radius: 10px;
           }
+
+            @keyframes scroll {
+          0% {
+              transform: translateX(0)
+          }
+          100% {
+              transform: translateX(-3500%);
+          }
+
+      }
+       .slide-track {
+          display: flex;
+      }
       }
   </style>

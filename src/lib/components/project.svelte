@@ -8,10 +8,10 @@
 
 <a 
   href="/projects/{link}"
-  class="relative h-[400px] w-[385px] shadow-[1px_1px_20px_1px_rgba(0,0,0,0.1)] border-[#fff] rounded-[10px] border-[4px] overflow-hidden"
+  class="relative h-[300px] md:w-[385px] w-[94vw] shadow-[1px_1px_20px_1px_rgba(0,0,0,0.1)] border-[#fff] rounded-[10px] border-[4px] overflow-hidden bg-[#f4f4f4]"
 >
   <img
-    class="hover:scale-110 scale-100 transition-all delay-200 duration-[600ms] ease-in-out  h-[380px] w-full object-cover rounded-[10px]"
+    class="h-[400px] w-full object-contain rounded-[10px] mt-[-100px]"
     src={img}
     alt={title}
   />

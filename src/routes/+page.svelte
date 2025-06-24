@@ -20,7 +20,7 @@ import { tweened } from "svelte/motion";
     if (!fadeStart) return;
 
     const scrollY = window.scrollY;
-    const maxFadeDistance = 10;
+    const maxFadeDistance = 0;
     const startScroll = triggerSection.offsetTop;
     const fadeValue = Math.min(Math.max((scrollY - startScroll) / maxFadeDistance, 10), 1);
     overlayOpacity.set(fadeValue);
@@ -90,16 +90,18 @@ $:console.log($overlayOpacity)
     <Hero />
     <div 
     id='work'
-    class="mt-[100px] flex flex-col items-center justify-center w-full px-10">
+    class="mt-[100px] flex flex-col items-center justify-center w-full md:px-10 px-4">
       <Subnav bind:activeTab />
       <Projects {activeTab} />
     </div>
   </div>
-  <section id="about" class="bg-transparent my-[100px] h-[1000px] w-full" bind:this={triggerSection}>
+  <div bind:this={triggerSection} class='w-full'>
+     <section id="about" class="bg-transparent py-[100px] h-[1000px] w-full">
     <About/>
   </section>
-  <div class="mt-[420px] pt-[200px] bg-[black]">
+  <div class="md:mt-[420px] mt-[800px] pt-[200px] bg-[black]">
   <Footer/>
+  </div>
 </div>
 </div>
 

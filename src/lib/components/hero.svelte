@@ -2,13 +2,14 @@
   import { ArrowUpRight, Mail } from "@lucide/svelte";
   import DesignerSpan from "./hero-cons/designer-span.svelte";
   import Behance from "./hero-cons/Integration icons/behance.svelte";
-  import Github from "./hero-cons/Integration icons/github.svelte";
   import Linkedin from "./hero-cons/Integration icons/linkedin.svelte";
   import Span from "./hero-cons/span.svelte";
   import Discord from "./hero-cons/Integration icons/discord.svelte";
   import Telegram from "./hero-cons/Integration icons/telegram.svelte";
   import XIcon from './hero-cons/Integration icons/X_icon.svg';
   import Fiverr from './hero-cons/Integration icons/fiverr-1.svg'
+  import Contra from "./hero-cons/Integration icons/contra.svelte";
+  import Github from "./hero-cons/Integration icons/github.svelte";
 
 const links = [
   {name:'Github',logo:Github,link:'https://github.com/thisdotlolu'},
@@ -17,14 +18,14 @@ const links = [
   {name:'X',logo:XIcon,link:'https://x.com/dexterrrrX'},
   {name:'Telegram',logo:Telegram,link:'https://t.me/lolu_xz'},
   {name:'Discord',logo:Discord,link:'https://discordapp.com/users/lolu0000/'},
-  // {name:'Contra',logo:,link:'https://www.linkedin.com/in/ebe-david-17b6921b0/'},
+  {name:'Contra',logo:Contra,link:'https://contra.com/davidebe63_si06kjvk'},
   {name:'Fiverr',logo:Fiverr,link:'https://www.fiverr.com/lolu18'},
 ]
   </script>
 
 
-  <div class="font-inter w-full mt-[80px] px-10 flex items-start justify-between pt-[50px]">
-      <div class='w-[65%]'>
+  <div class="font-inter w-full mt-[80px] md:px-10 px-4 md:flex-row flex-col flex items-start justify-between pt-[50px]">
+      <div class='md:w-[65%] w-full'>
         <div class="w-fit p-[3px] border border-dashed border-[#b1b6bf] text-[#7a8293] text-[.7rem] rounded-full flex items-center gap-1">
           <span class='bg-green-500 h-[5px] w-[5px] rounded-[100%]'></span>
           Always online ;)
@@ -61,7 +62,7 @@ const links = [
         </div>
       </div>
   
-      <div class="flex gap-4 my-[20px]">
+      <div class="flex gap-4 my-[20px] md:mt-0 mt-[50px]">
         <div class="flex flex-col items-start justify-center gap-2">
           {#each links.slice(0,4) as item, index (item.name)}
           <a

@@ -1,10 +1,9 @@
 <script lang='ts'>
-  import { ExternalLink } from "@lucide/svelte";
+  import { ArrowUpRight, ExternalLink, Mail } from "@lucide/svelte";
   import Docker from "./hero-cons/Integration icons/docker.svelte";
   import Figma from "./hero-cons/Integration icons/figma.svelte";
   import Firebase from "./hero-cons/Integration icons/firebase.svelte";
   import Framer from "./hero-cons/Integration icons/framer.svelte";
-  import Github from "./hero-cons/Integration icons/github.svelte";
   import Mongodb from "./hero-cons/Integration icons/mongodb.svelte";
   import VsCode from "./hero-cons/Integration icons/vs_code.svelte";
   import Webflow from "./hero-cons/Integration icons/webflow.svelte";
@@ -16,6 +15,7 @@
 
 import { register } from 'swiper/element/bundle';
   import Slider from "./slider.svelte";
+  import Github2 from "./hero-cons/Integration icons/github2.svelte";
 register();
  const spaceBetween = 10;
   const onProgress = (e: CustomEvent<[swiper: any, progress: number]>) => {
@@ -26,17 +26,43 @@ register();
 
 </script>
 
-<div class='w-full max-w-[1300px] px-10 mx-auto'>
-    <p class='text-[#7a8293]'>About me</p>
-    <div class='flex items-start justify-between mt-[40px] gap-[100px]'>
-        <div class='text-[4rem] w-[40%] text-[#d3d3d3] leading-[60px]'>
+<div class='w-full md:max-w-[1300px] max-w-[95vw] md:px-10 mx-auto'>
+    <p class='text-[#7a8293] tracking-tighter'>About me</p>
+    <div class='md:flex-row flex-col flex items-start justify-between md:mt-[40px] mt-[20px] gap-[100px]'>
+        <div 
+        style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.2}s; opacity: 0; transform: translateY(10px);"
+        class='flex flex-col items-start justify-start md:text-[4rem] text-[3.4rem] md:w-[40%] w-full text-[#d3d3d3] tracking-[-2px] md:leading-[60px] leading-[50px]'>
             Full-Stack Developer & UI/UX Designer
-            <div class="flex items-center justify-start gap-[10px] mt-[30px]">
-                <Svlte/> <Next/> <Typescript/> <Figma/> <Framer/> <Node/> <Github/> <Webflow/> <Wordpress/> <Mongodb/> <Firebase/> <Docker/> <VsCode/>
+            <div 
+            style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.3}s; opacity: 0; transform: translateY(10px);"
+            class="flex flex-wrap items-center justify-start gap-[10px] mt-[30px]">
+                <Svlte/> <Next/> <Typescript/> <Figma/> <Framer/> <Node/> <Github2/> <Webflow/> <Wordpress/> <Mongodb/> <Firebase/> <Docker/> <VsCode/>
             </div>
+
+        <div 
+        style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.4}s; opacity: 0; transform: translateY(10px);"
+        class="mt-[30px] w-full flex text-[.9rem] text-white items-center gap-[30px]">
+        <a 
+        target="_blank"
+        href='mailto:davidebe63@gmail.com'
+        class='gap-2 !text-[#000] tracking-[0px] !bg-[#fff] w-fit p-[10px] h-[35px] rounded-[30px] flex items-center justify-center px-[20px]'>
+          Send an email 
+          <Mail
+          size={10}
+          />
+        </a>
+        <a 
+        target="_blank"
+        href='https://calendar.app.google/4PWEEC1grsbukDpe9'
+        class=' w-fit tracking-[0px] p-[10px] h-[30px] rounded-2xl flex items-center justify-center '>
+          Book a Call <ArrowUpRight size={15}/>
+        </a>
+        </div>
         </div>
 
-        <div class='text-[#d3d3d3] text-[1.2rem] w-[55%]'>
+        <div 
+        style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.5}s; opacity: 0; transform: translateY(10px);"
+        class='text-[#d3d3d3] text-[1.1rem] md:w-[55%] w-full'>
             I'm a multidisciplinary software engineer and designer with 5+ years of experience building user-focused products and scalable systems. My work blends clean code with elegant UI—solving real business problems with tools like Figma, React, SvelteKit, Nodejs etc.
             I've worked across Fintech, Blockchain, Education, and Ecommerce, partnering with companies across Africa, Europe and the U.S. From MVPs to dashboards, I bring clarity and purpose to every screen I touch.
             Currently open to new opportunities—contract or full-time—where I can help design and build thoughtful digital experiences.
@@ -50,8 +76,11 @@ register();
               size={10}
               />
             </a>
-            <hr class='my-[20px]'/>
+            <hr 
+            style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.6}s; opacity: 0; transform: translateY(10px);"
+            class='my-[20px]'/>
             <p
+            style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.7}s; opacity: 0; transform: translateY(10px);"
             class="mt-[20px] mb-[10px]"
             >Selected Feedbacks</p>
             <swiper-container
@@ -93,9 +122,13 @@ register();
 
 <div 
 id='dump'
-class='w-screen mt-[40px]'>
-    <p class='text-[#7a8293] mb-[10px] max-w-[1300px] mx-auto px-10 text-[3rem]'>Dumps</p>
-    <p class='text-[#fff] max-w-[1300px] mx-auto px-10'>Here you can find random ui/ux design related stuff i worked on during my free time</p>
+class=' w-screen md:mt-[40px] mt-[70px] h-fit'>
+    <p 
+    style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.2}s; opacity: 0; transform: translateY(10px);"
+    class='text-[#7a8293] mb-[10px] md:max-w-[1300px] mx-auto md:px-10 px-4 md:text-[3rem] text-[1.5rem]'>Dump</p>
+    <p 
+    style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.2}s; opacity: 0; transform: translateY(10px);"
+    class='text-[#fff] md:max-w-[1300px] mx-auto md:px-10 px-4'>Here you can find random ui/ux design related stuff i worked on during my free time</p>
     <Slider/>
 </div>
 
