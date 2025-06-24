@@ -68,13 +68,13 @@
           }
           
           .slide {
-              height: fit-content;
-              width: fit-content;
+              max-height: 300px;
           }
           
           img {
-              height: 400px;
-              width: 100%;
+              max-height: 300px;
+              width: auto;
+              height: auto;
               border-radius: 10px;
           }
 
