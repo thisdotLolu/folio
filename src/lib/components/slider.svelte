@@ -1,0 +1,74 @@
+<script>
+    import { carouselData } from "$lib/dumpData";
+  </script>
+  <div class='slider'>
+      <div class='slide-track'>
+          {#each carouselData as dump, index}
+          <div class='slide'>
+              <img 
+              alt='dump'
+              src={dump}/>
+          </div>
+          {/each}
+      </div>
+  </div>
+  <style>
+      .slider {
+          height: 100%;
+          margin: auto;
+          position: relative;
+          width: 100%;
+          display: grid;
+          place-items: center;
+          overflow: hidden;
+          margin-top: 50px;
+          padding-bottom: 50px;
+      }
+  
+      .slide-track {
+          display: flex;
+          animation: scroll 100s linear infinite;
+          gap: 20px;
+      }
+  
+      @keyframes scroll {
+          0% {
+              transform: translateX(0)
+          }
+          100% {
+              transform: translateX(-1200%);
+          }
+      }
+  
+      .slide {
+          display: flex;
+          align-items: center;
+          flex-shrink: 0;
+          max-height: 500px;
+      }
+  
+      img {
+          max-height: 500px;
+          width: auto;
+          height: auto;
+          object-fit: contain;
+          display: block;
+      }
+  
+      @media screen and (max-width: 770px) {
+          .slider {
+              margin-top: -23px;
+              height: 140px;
+          }
+          
+          .slide {
+              max-height: 120px;
+          }
+          
+          img {
+              max-height: 120px;
+              width: auto;
+              border-radius: 10px;
+          }
+      }
+  </style>

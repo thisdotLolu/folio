@@ -8,6 +8,7 @@ import { tweened } from "svelte/motion";
   import { cubicOut } from "svelte/easing";
   import { onMount } from "svelte";
   import About from '$lib/components/about.svelte';
+  import Lenis from 'lenis';
 
   const overlayOpacity = tweened(0, { duration: 300, easing: cubicOut });
   let triggerSection: HTMLElement;
@@ -25,6 +26,15 @@ import { tweened } from "svelte/motion";
   }
 
   onMount(() => {
+    // const lenis = new Lenis();
+
+    // function raf(time: number) {
+    //   lenis.raf(time);
+    //   requestAnimationFrame(raf);
+    // }
+
+    // requestAnimationFrame(raf);
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         fadeStart = entry.isIntersecting;
@@ -65,9 +75,9 @@ $: overlayIntensity = $overlayOpacity;
       <Subnav bind:activeTab />
       <Projects {activeTab} />
     </div>
-    <section id="about" class="bg-transparent my-[100px] h-[1000px] w-full px-10" bind:this={triggerSection}>
-      <About/>
-    </section>
   </div>
+  <section id="about" class="bg-transparent my-[100px] h-[1000px] w-full" bind:this={triggerSection}>
+    <About/>
+  </section>
 </div>
 

@@ -208,7 +208,7 @@ export const devProjects:DevProject[] = [
       img:'/projects/scheduledrop1.png',
       shortDescription:'CRM web platform for cleaning service operations.',
       toolsUsed:'Figma',
-      longDescription:'',
+      longDescription:'Redesign of ScheduleDrop – a CRM web platform for cleaning service operations.',
       caseStudyLink:'https://loludavid.notion.site/Full-Case-Study-1cb0d58b34778031b06ac9d1da349c3c',
       images: [
         '/projects/schedule-dash1.png',

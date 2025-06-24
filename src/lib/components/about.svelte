@@ -16,6 +16,7 @@
 
 import { register } from 'swiper/element/bundle';
   import type { ChangeEventHandler } from "svelte/elements";
+  import Slider from "./slider.svelte";
 register();
  const spaceBetween = 10;
   const onProgress = (e: CustomEvent<[swiper: any, progress: number]>) => {
@@ -26,7 +27,7 @@ register();
 
 </script>
 
-<div class='w-full'>
+<div class='w-full max-w-[1300px] px-10 mx-auto'>
     <p class='text-[#7a8293]'>About me</p>
     <div class='flex items-start justify-between mt-[40px] gap-[100px]'>
         <div class='text-[4rem] w-[40%] text-[#d3d3d3] leading-[60px]'>
@@ -58,9 +59,6 @@ register();
             slides-per-view={1}
             space-between={spaceBetween}
             centered-slides={true}
-            pagination={{
-              hideOnClick: true,
-            }}
             autoplay={true}
             breakpoints={{
               768: {
@@ -97,9 +95,10 @@ register();
           </swiper-container>
         </div>
     </div>
+</div>
 
-    <div class='w-full mt-[40px]'>
-        <p class='text-[#7a8293] mb-[10px]'>Dumps</p>
-        <p class='text-[#fff]'>Here you can find random ui/ux design related stuff i worked on during my free time</p>
-    </div>
+<div class='w-screen mt-[40px]'>
+    <p class='text-[#7a8293] mb-[10px] max-w-[1300px] mx-auto px-10 text-[3rem]'>Dumps</p>
+    <p class='text-[#fff] max-w-[1300px] mx-auto px-10'>Here you can find random ui/ux design related stuff i worked on during my free time</p>
+    <Slider/>
 </div>
