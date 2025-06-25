@@ -174,6 +174,7 @@ onMount(async () => {
          on:click={()=>isActive = !isActive}
             class='md:hidden block'>
                 <Menu
+                color={isOverlayVisible?'white':'black'}
                 size={30}
                 className='text-[#fff]' 
                 />
