@@ -6,7 +6,6 @@
   import Span from "./hero-cons/span.svelte";
   import Discord from "./hero-cons/Integration icons/discord.svelte";
   import Telegram from "./hero-cons/Integration icons/telegram.svelte";
-  import XIcon from './hero-cons/Integration icons/X_icon.svg';
   import Fiverr from './hero-cons/Integration icons/fiverr-1.svg'
   import Contra from "./hero-cons/Integration icons/contra.svelte";
   import Github from "./hero-cons/Integration icons/github.svelte";
@@ -15,7 +14,6 @@ const links = [
   {name:'Github',logo:Github,link:'https://github.com/thisdotlolu'},
   {name:'Behance',logo:Behance,link:'https://behance.com/loludavid'},
   {name:'LinkedIn',logo:Linkedin,link:'https://www.linkedin.com/in/ebe-david-17b6921b0/'},
-  {name:'X',logo:XIcon,link:'https://x.com/dexterrrrX'},
   {name:'Telegram',logo:Telegram,link:'https://t.me/lolu_xz'},
   {name:'Discord',logo:Discord,link:'https://discordapp.com/users/lolu0000/'},
   {name:'Contra',logo:Contra,link:'https://contra.com/davidebe63_si06kjvk'},
