@@ -10,6 +10,8 @@
   href="/projects/{link}"
   class="relative h-[300px] md:w-[385px] w-[94vw] shadow-[1px_1px_20px_1px_rgba(0,0,0,0.1)] border-[#fff] rounded-[10px] border-[4px] overflow-hidden bg-[#f4f4f4]"
 >
+
+  <!-- class="relative h-[300px] md:w-[385px] w-[94vw] shadow-[1px_1px_20px_1px_rgba(0,0,0,0.1)] border-[#fff] rounded-[10px] border-[4px] overflow-hidden bg-gradient-to-br from-[#fbc2eb] via-[#a6c1ee] to-[#fbc2eb]/50" -->
   <img
     class="h-[400px] w-full object-contain rounded-[10px] mt-[-100px]"
     src={img}
