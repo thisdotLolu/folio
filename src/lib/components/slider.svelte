@@ -1,7 +1,7 @@
 <script>
     import { carouselData } from "$lib/dumpData";
   </script>
-  <div class='slider bg-black'>
+  <div class='slider '>
       <div class='slide-track'>
           {#each carouselData as dump, index}
           <div class='slide'>
@@ -23,7 +23,6 @@
           place-items: center;
           overflow: hidden;
           margin-top: 50px;
-          background-color: black;
       }
 
       .slide-track:hover {
@@ -32,7 +31,7 @@
   
       .slide-track {
           display: flex;
-          animation: scroll 300s linear infinite;
+          animation: scroll 100s linear infinite;
           gap: 20px;
       }
   

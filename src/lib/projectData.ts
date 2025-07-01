@@ -45,6 +45,27 @@ export const devProjects:DevProject[] = [
           '/projects/lwa2.webp'
         ]
     },
+    {
+        name:'glfzy',
+        img: '/projects/glfzy6.png',
+        title: 'Glfzy - Golf Tee time management platform',
+        link: 'https://github.com/thisdotLolu/glfzy-new',
+        role:"Svelte Developer",
+        shortDescription: 'Groups, Tee times management, Stats, Golf Courses',
+        longDescription: 'Built Full App to current look using Supabase, Sveltekit and Shadcn.',
+        tag: 'Development',
+        toolsUsed:'Sveletkit, Supabase, Shadcn',
+        images: [
+         '/projects/glfzy1.png',
+         '/projects/glfzy2.png',
+         '/projects/glfzy3.png',
+         '/projects/glfzy4.png',
+         '/projects/glfzy5.png',
+         '/projects/glfzy6.png',
+         '/projects/glfzy7.png',
+         '/projects/glfzy8.png',
+        ]
+    },
       {
       name:'contractor-lead-flow',
       img: '/projects/clf1.webp',
@@ -63,7 +84,7 @@ export const devProjects:DevProject[] = [
       ]
     },
     {
-      name:'toashi',
+      name:'taoshi',
       img: '/projects/taoshi1.webp',
       title: 'Taoshi Dashboard',
       link: 'https://taoshidashboard.com',
@@ -110,6 +131,27 @@ export const devProjects:DevProject[] = [
         '/projects/velia2.webp',
         '/projects/velia1.webp',
         '/projects/velia3.webp',
+      ]
+    },
+    {
+      name:'svelte-musicl',   
+      img: '/projects/svelte-musicl1.png',
+      title: 'Sv Music',
+      link: 'https://github.com/thisdotLolu/svelte-musical',
+      shortDescription: 'Music Previews with Deezer API.',
+      longDescription: 'Spotify-like music previews app using SvelteKit and Deezer API. Features include search, play, pause, plalists, spotify authentication, and more.',
+      tag: 'Development',
+      role:'Svelte Developer',
+      toolsUsed:'Sveltekit, Deezer API',
+      images: [
+        '/projects/svelte-musicl1.png',
+        '/projects/svelte-musicl2.png',
+        '/projects/svelte-musicl3.png',
+        '/projects/svelte-musicl4.png',
+        '/projects/svelte-musicl5.png',
+        '/projects/svelte-musicl6.png',
+        '/projects/svelte-musicl7.png',
+        '/projects/svelte-musicl8.png',
       ]
     },
     {
@@ -264,7 +306,7 @@ export const devProjects:DevProject[] = [
       title:'Henry AI',
       slug:'henry-ai',
       img:'/projects/henryai.png',
-      shortDescription:'Community Landing Page',
+      shortDescription:'AI Startup Landing Page',
       toolsUsed:'Figma',
       caseStudyLink:'',
       images: [

@@ -125,7 +125,7 @@ id='dump'
 class=' w-screen md:mt-[40px] mt-[70px] h-fit'>
     <p 
     style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.2}s; opacity: 0; transform: translateY(10px);"
-    class='text-[#7a8293] mb-[10px] md:max-w-[1300px] mx-auto md:px-10 px-4 md:text-[3rem] text-[1.5rem]'>Dump</p>
+    class='text-[#7a8293] mb-[10px] md:max-w-[1300px] mx-auto md:px-10 px-4 md:text-[3rem] text-[1.5rem]'>Gallery</p>
     <p 
     style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.2}s; opacity: 0; transform: translateY(10px);"
     class='text-[#fff] md:max-w-[1300px] mx-auto md:px-10 px-4'>Here you can find random ui/ux design related stuff i worked on during my free time</p>
