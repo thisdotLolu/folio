@@ -6,6 +6,7 @@ export const carouselData = [
     '/projects/dump5.png',
     '/projects/dump6.png',
     '/projects/dump7.png',
+    '/projects/farmgame.png',
     '/projects/dump8.png',
     '/projects/dump9.png',
     '/projects/dump10.png',
