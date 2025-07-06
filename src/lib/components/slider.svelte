@@ -4,6 +4,7 @@
   <div class='slider '>
       <div class='slide-track'>
           {#each carouselData as dump, index}
+
           <div class='slide'>
               <img 
               class=''
@@ -31,7 +32,7 @@
   
       .slide-track {
           display: flex;
-          animation: scroll 100s linear infinite;
+          animation: scroll 150s linear infinite;
           gap: 20px;
       }
   
