@@ -76,6 +76,11 @@ $:console.log($overlayOpacity)
 
 </script>
 
+<svelte:head>
+  <title>Lolu - Developer and Designer</title>
+  <meta name="description" content="Lolu is a full-stack developer and UI/UX designer specializing in creating modern, responsive web applications. Explore my portfolio to see my work." />
+</svelte:head>
+
 <div class="relative min-h-screen w-full overflow-x-hidden">
   <div
     class="fixed top-0 left-0 w-full h-full z-[-1] pointer-events-none"
