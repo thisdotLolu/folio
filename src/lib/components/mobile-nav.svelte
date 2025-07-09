@@ -16,7 +16,7 @@
   const navItems = [
     { title: "Work", href: "#work" },
     { title: "About", href: "#about" },
-    { title: "Dump", href: "#dump" }
+    { title: "Gallery", href: "#dump" }
   ];
 
   let selectedIndicator = "";

@@ -41,14 +41,14 @@ register();
 
         <div 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.4}s; opacity: 0; transform: translateY(10px);"
-        class="mt-[30px] w-full flex text-[.9rem] text-white items-center gap-[30px]">
+        class="mt-[30px] w-full flex text-[.9rem] text-white items-center gap-[10px]">
         <a 
         target="_blank"
         href='mailto:davidebe63@gmail.com'
-        class='gap-2 !text-[#000] tracking-[0px] !bg-[#fff] w-fit p-[10px] h-[35px] rounded-[30px] flex items-center justify-center px-[20px]'>
+        class='gap-1 !text-[#000] tracking-[0px] !bg-[#fff] w-fit p-[10px] h-[40px] rounded-[30px] flex items-center justify-center px-[20px]'>
           Send an email 
           <Mail
-          size={10}
+          size={14}
           />
         </a>
         <a 

@@ -139,7 +139,7 @@ export const devProjects:DevProject[] = [
       title: 'Sv Music',
       link: 'https://github.com/thisdotLolu/svelte-musical',
       shortDescription: 'Music Previews with Deezer API.',
-      longDescription: 'Spotify-like music previews app using SvelteKit and Deezer API. Features include search, play, pause, plalists, spotify authentication, and more.',
+      longDescription: 'Apple music style previews app using SvelteKit and Deezer API. Features include search, play, pause, plalists, spotify authentication, and more.',
       tag: 'Development',
       role:'Svelte Developer',
       toolsUsed:'Sveltekit, Deezer API',
@@ -153,6 +153,18 @@ export const devProjects:DevProject[] = [
         '/projects/svelte-musicl7.png',
         '/projects/svelte-musicl8.png',
       ]
+    },
+      {
+      name:"verus",
+      img: 'https://play-lh.googleusercontent.com/3nJ7MYafxtfpGmnSvrSCHBUrUL_J-FfOM6B0odQ74z3_nPpR7QIbe4-qjpa-wQlzGB8',
+      title: 'Verus Mobile',
+      link: 'https://github.com/VerusCoin/Verus-Mobile',
+      shortDescription: 'Contribution to mobile app features',
+      longDescription: 'Added features such as balance visibility toggle, coin tickers on chain list, light and dark mode toggle, send transaction process etc to the existing mobile app',
+      tag: 'Development',
+      role:'Mobile Engineer',
+      toolsUsed:'React Native, Redux',
+      images: []
     },
     {
       name:'learniverse',   
@@ -201,18 +213,7 @@ export const devProjects:DevProject[] = [
         '/projects/carlossy5.png',
       ]
     },
-    {
-      name:"verus",
-      img: 'https://play-lh.googleusercontent.com/3nJ7MYafxtfpGmnSvrSCHBUrUL_J-FfOM6B0odQ74z3_nPpR7QIbe4-qjpa-wQlzGB8',
-      title: 'Verus Mobile',
-      link: 'https://github.com/VerusCoin/Verus-Mobile',
-      shortDescription: 'Contribution to mobile app features',
-      longDescription: 'Added features such as balance visibility toggle, coin tickers on chain list, light and dark mode toggle, send transaction process etc to the existing mobile app',
-      tag: 'Development',
-      role:'Mobile Engineer',
-      toolsUsed:'React Native, Redux',
-      images: []
-    },
+  
   ];
 
 

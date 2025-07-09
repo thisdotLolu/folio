@@ -45,10 +45,10 @@ const links = [
         <a 
         target="_blank"
         href='mailto:davidebe63@gmail.com'
-        class='gap-2 text-[#fff] bg-[#000] w-fit p-[10px] h-[35px] rounded-[30px] flex items-center justify-center px-[20px]'>
+        class='gap-1 text-[#fff] bg-[#000] w-fit p-[10px] h-[40px] rounded-[30px] flex items-center justify-center px-[20px]'>
           Send an email 
           <Mail
-          size={10}
+          size={14}
           />
         </a>
         <a 

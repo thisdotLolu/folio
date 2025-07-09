@@ -41,7 +41,7 @@
               transform: translateX(0)
           }
           100% {
-              transform: translateX(-1200%);
+              transform: translateX(-1080%);
           }
       }
   
@@ -83,7 +83,7 @@
               transform: translateX(0)
           }
           100% {
-              transform: translateX(-1800%);
+              transform: translateX(-1650%);
           }
 
       }
