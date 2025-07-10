@@ -9,7 +9,7 @@
     type DesignProject,
     type DevProject,
   } from "$lib/projectData";
-  import { ExternalLink, Link, Link2Off, MoveLeft } from "@lucide/svelte";
+  import { ArrowUp, ExternalLink, Link, Link2Off, MoveLeft } from "@lucide/svelte";
   import { browser } from "$app/environment";
   import { goto } from "$app/navigation";
 
@@ -46,9 +46,16 @@
     if (browser) window.history.back();
     goto("/");
   }
+  
+  function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
 </script>
 
-<div class="font-inter bg-white w-full h-full">
+<div class="relative font-inter bg-white w-full h-full">
   <div
     class="relative z-10 md:max-w-[1300px] mx-auto flex flex-col items-center justify-start"
   >
@@ -157,4 +164,12 @@
       </div>
     {/if}
   </div>
+
+  <button
+  on:click={scrollToTop}
+  class='fixed right-4 shadow-xl bottom-4 bg-[#d5d8dd8b] text-black rounded-full p-1 cursor-pointer z-[1000]'>
+    <ArrowUp
+    class='cursor-pointer'
+    />
+  </button>
 </div>

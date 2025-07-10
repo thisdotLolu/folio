@@ -163,7 +163,7 @@ onMount(async () => {
           href={item.path}
           on:click={(e) => handleNavClick(e, item.path)}
         >
-          <span class={clsx("relative z-10 transition-colors duration-300 ease-in-out hover:text-white", isOverlayVisible?'text-[#d3d3d3]':'text-[#181b21]')}>
+          <span class={clsx("relative z-10 transition-colors duration-300 ease-in-out hover:text-white px-0.5", isOverlayVisible?'text-[#d3d3d3]':'text-[#181b21]')}>
             {item.label}
           </span>
         </a>

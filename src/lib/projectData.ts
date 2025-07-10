@@ -61,7 +61,7 @@ export const devProjects:DevProject[] = [
         shortDescription: 'Groups, Tee times management, Stats, Golf Courses',
         longDescription: 'Built Full App to current look using Supabase, Sveltekit and Shadcn.',
         tag: 'Development',
-        toolsUsed:'Sveletkit, Supabase, Shadcn',
+        toolsUsed:'Sveletkit, Supabase, Shadcn, MapboxGL',
         images: [
          '/projects/glfzy1.png',
          '/projects/glfzy2.png',
