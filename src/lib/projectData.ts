@@ -1,3 +1,10 @@
+export function linkify(text: string) {
+  return text.replace(
+    /(https?:\/\/[^\s]+)/g,
+    (url) => `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-blue-400 underline">${url}</a>`
+  );
+}
+
 export const devProjects:DevProject[] = [
   {
     name:'rollpay',
@@ -20,7 +27,7 @@ export const devProjects:DevProject[] = [
       img: '/projects/degendev1.png',
       title: 'Degen Devs Website',
       link: 'https://degendevs.com',
-      role:'Core Member of the Fullstack Development team',
+      role:'Core member of the Fullstack Development team',
       toolsUsed:'React, Nextjs, Nodejs',
       shortDescription: 'Rebuild of the agency site and team member.',
       longDescription: 'Rebuilt most of the landing page implementaion. Worked on projects including https://blocknite.io , https://exotic.markets , https://betlifesports.com',
