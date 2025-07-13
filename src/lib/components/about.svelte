@@ -101,7 +101,7 @@ register();
              class='h-[200px] w-full'
             >
                 <p class='text-[1rem]'>"I checked your code and well fucking done mate. This is what i wanted. Code well structured."</p>
-                <p class='text-[#d3d3d3] text-[.8rem] gap-1 flex items-center mt-[10px]'> - Furkan Beyler, <span class='text-[#7a8293]'>Colleague</span></p>
+                <p class='text-[#d3d3d3] text-[.8rem] gap-1 flex items-center mt-[10px]'> - Furkan Boran, <span class='text-[#7a8293]'>Colleague</span></p>
             </swiper-slide>
             <swiper-slide
             class='h-[200px] w-full'
