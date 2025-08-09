@@ -67,7 +67,7 @@
       >
         <button
           on:click={nav_back}
-          class="bg-[#d5d8dd8b] cursor-pointer mb-[30px] px-[10px] flex items-center gap-1 rounded-full w-fit"
+          class="bg-[#d5d8dd8b] cursor-pointer mb-[30px] h-[35px] px-[10px] flex items-center gap-1 rounded-[10px] w-fit"
         >
           <MoveLeft size={12} /> Back
         </button>
@@ -107,7 +107,7 @@
           {/if}
         </div>
 
-        <hr class="my-[40px] border-[#7a8293]" />
+        <hr class="my-[40px] border-[#7a82933b]" />
         <div class="mb-8">
           <h2 class="text-2xl tracking-[-1px] font-semibold mb-1">
             Description
