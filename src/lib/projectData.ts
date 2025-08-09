@@ -8,7 +8,7 @@ export function linkify(text: string) {
 export const devProjects:DevProject[] = [
   {
     name:'rollpay',
-    img: '/covers/rollpay.png',
+    img: '/covers/rollpay-min.png',
     title: 'Rollpay',
     link: 'https://business.rollpay.app/',
     shortDescription: 'Film industry payroll platform.',
@@ -24,7 +24,7 @@ export const devProjects:DevProject[] = [
   },
     {
       name:'degendevs',
-      img: '/covers/degendevs.png',
+      img: '/covers/degendevs-min.png',
       title: 'Degen Devs Website',
       link: 'https://degendevs.com',
       role:'Core member of the Fullstack Development team',
@@ -39,7 +39,7 @@ export const devProjects:DevProject[] = [
     },
     {
         name:'learning-with-ai',
-        img: '/covers/lwai.png',
+        img: '/covers/lwai-min.png',
         title: 'Learning With AI',
         link: 'https://learningwith.ai',
         role:"Contractual Senior Frontend Engineer",
@@ -54,7 +54,7 @@ export const devProjects:DevProject[] = [
     },
     {
         name:'glfzy',
-        img: '/covers/glfzy.png',
+        img: '/covers/glfzy-min.png',
         title: 'Glfzy - Golf Tee time management platform',
         link: 'https://github.com/thisdotLolu/glfzy-new',
         role:"Svelte Developer",
@@ -75,7 +75,7 @@ export const devProjects:DevProject[] = [
     },
       {
       name:'contractor-lead-flow',
-      img: '/covers/clf.png',
+      img: '/covers/clf-min.png',
       title: 'Contractor Lead Flow',
       link: 'https://contractorleadflow.com',
       shortDescription: 'Built full website with Stripe Integration.',
@@ -92,7 +92,7 @@ export const devProjects:DevProject[] = [
     },
     {
       name:'taoshi',
-      img: '/covers/taoshi.png',
+      img: '/covers/taoshi-min.png',
       title: 'Taoshi Dashboard',
       link: 'https://taoshidashboard.com',
       shortDescription: 'Miner performance dashboard.',
@@ -110,7 +110,7 @@ export const devProjects:DevProject[] = [
     },
     {
       name:'orma',
-      img:'/covers/orma.png',
+      img:'/covers/orma-min.png',
       title: 'Orma',
       link: 'https://app.ourorma.com/',
       shortDescription: 'Event photo app.',
@@ -126,7 +126,7 @@ export const devProjects:DevProject[] = [
     },
     {
       name:'velia',
-      img: '/covers/tnc.png',
+      img: '/covers/tnc-min.png',
       title: 'Velia Nobili T&C System',
       tag: 'Development',
       role:'Contractual Senior Frontend Engineer',
@@ -142,7 +142,7 @@ export const devProjects:DevProject[] = [
     },
     {
       name:'svelte-musicl',   
-      img: '/covers/svelte-musicl.png',
+      img: '/covers/svelte-musicl-min.png',
       title: 'Sv Music',
       link: 'https://github.com/thisdotLolu/svelte-musical',
       shortDescription: 'Music Previews with Deezer API.',
@@ -175,7 +175,7 @@ export const devProjects:DevProject[] = [
     },
     {
       name:'learniverse',   
-      img: '/covers/learniverse.png',
+      img: '/covers/learniverse-min.png',
       title: 'Learniverse AI',
       link: 'https://learniverse.ai',
       shortDescription: 'Learning paths with AI.',
@@ -190,7 +190,7 @@ export const devProjects:DevProject[] = [
     },
     {
       name:'777',
-      img: '/covers/777sl.png',
+      img: '/covers/777sl-min.png',
       title: '777 Sense Labs',
       link: 'https://777senselabs.com/collections',
       shortDescription: 'Web3 collections page.',
@@ -204,7 +204,7 @@ export const devProjects:DevProject[] = [
     },
     {
       name:"carlossy",
-      img: '/covers/carlossy.png',
+      img: '/covers/carlossy-min.png',
       title: 'Carlossy Meme Coin',
       link: 'https://carlossy-updated.vercel.app',
       shortDescription: 'Landing and dashboard UI.',
