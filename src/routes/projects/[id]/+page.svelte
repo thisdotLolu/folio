@@ -13,6 +13,9 @@
   import { browser } from "$app/environment";
   import { goto } from "$app/navigation";
 
+
+  const tab = $page.url.searchParams.get("tab") || "Development";
+
   let projectId: string;
   projectId = $page.params.id;
 
@@ -42,10 +45,9 @@
     }
   }
 
-  function nav_back() {
-    if (browser) window.history.back();
-    goto("/");
-  }
+function nav_back() {
+  if (browser) window.history.back();
+}
   
   function scrollToTop() {
   window.scrollTo({
@@ -128,7 +130,8 @@
                   class="bg-gray-100 shadow-2xl h-fit rounded-lg overflow-hidden"
                 >
                   <img
-                    src={image}
+                    srcset={image}
+                    fetchpriority="high"
                     alt="{title} screenshot {index + 1}"
                     class="object-contain transition-transform duration-300"
                   />
@@ -146,7 +149,8 @@
             >
               {#each images as image, index}
                 <img
-                  src={image}
+                 srcset={image}
+                    fetchpriority="high"
                   alt="{title} screenshot {index + 1}"
                   class="object-cover shadow-2xl transition-transform duration-300 h-[450px]"
                 />

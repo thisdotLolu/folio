@@ -10,6 +10,7 @@
     <div class='w-full grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 place-items-center gap-5'>
         {#each devProjects as project,index}
         <Project
+        {activeTab}
         img={project.img}
         link={project.name}
         title={project.title}
@@ -22,6 +23,7 @@
     <div class='w-full grid lg:grid-cols-3 grid-cols-1 place-items-center gap-5'>
         {#each designProjects as project,index}
         <Project
+        {activeTab}
         img={project.img}
         link={project.name}
         title={project.title}

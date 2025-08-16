@@ -10,6 +10,7 @@ import { tweened } from "svelte/motion";
   import About from '$lib/components/about.svelte';
   import Lenis from 'lenis';
   import Footer from '$lib/components/footer.svelte';
+  import { page } from '$app/stores';
 
   const overlayOpacity = tweened(0, { duration: 300, easing: cubicOut });
   let triggerSection: HTMLElement;
@@ -36,8 +37,6 @@ import { tweened } from "svelte/motion";
     });
   }
 }
-
-
 
   onMount(() => {
     const lenis = new Lenis();
@@ -67,12 +66,11 @@ import { tweened } from "svelte/motion";
   });
 
 
-let activeTab='Development';
+let activeTab = $page.url.searchParams.get("tab") || "Development";
 $: isOverlayVisible = $overlayOpacity > 0 ;
 $: overlayIntensity = $overlayOpacity;
 
 $:console.log($overlayOpacity)
-
 
 </script>
 
