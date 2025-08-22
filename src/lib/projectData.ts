@@ -25,14 +25,20 @@ export const devProjects:DevProject[] = [
     {
       name:'degendevs',
       img: '/covers/degendevs-min.png',
-      title: 'Degen Devs Website',
+      title: 'Degen Devs',
       link: 'https://degendevs.com',
       role:'Core member of the Fullstack Development team',
       toolsUsed:'React, Nextjs, Nodejs',
-      shortDescription: 'Rebuild of the agency site and team member.',
-      longDescription: 'Rebuilt most of the landing page implementaion. Worked on projects including https://blocknite.io , https://exotic.markets , https://betlifesports.com',
+      shortDescription: 'Team Member.',
+      longDescription: `Rebuilt most of the landing page implementaion. 
+      Leading FE development of https://blocknite.io Dapp, working with Spine animations/rendering, Mobile responsive Styling and other complex implementations
+      Worked on other projects including https://exotic.markets , https://betlifesports.com`,
       tag: 'Development',
       images: [
+        '/projects/blocknite-1.png',
+        '/projects/blocknite-2.png',
+        '/projects/blocknite-3.png',
+        '/projects/blocknite-4.png',
         '/projects/degendev1.png',
         '/projects/degendev2.png'
       ]
