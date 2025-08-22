@@ -29,9 +29,11 @@ export const devProjects:DevProject[] = [
       link: 'https://degendevs.com',
       role:'Core member of the Fullstack Development team',
       toolsUsed:'React, Nextjs, Nodejs',
-      shortDescription: 'Team Member.',
-      longDescription: `Rebuilt most of the landing page implementaion. 
-      Leading FE development of https://blocknite.io Dapp, working with Spine animations/rendering, Mobile responsive Styling and other complex implementations
+      shortDescription: 'Fullstack Developer.',
+      longDescription: `Rebuilt most of the landing page implementation.
+      \n\
+      Leading FE development of https://blocknite.io Dapp, working with Spine animations/rendering, Mobile responsive Styling and other complex implementations.
+      \n\
       Worked on other projects including https://exotic.markets , https://betlifesports.com`,
       tag: 'Development',
       images: [
