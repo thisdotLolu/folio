@@ -171,7 +171,7 @@ export const devProjects:DevProject[] = [
     },
       {
       name:"verus",
-      img: 'https://play-lh.googleusercontent.com/3nJ7MYafxtfpGmnSvrSCHBUrUL_J-FfOM6B0odQ74z3_nPpR7QIbe4-qjpa-wQlzGB8',
+      img: '/covers/verus.png',
       title: 'Verus Mobile',
       link: 'https://github.com/VerusCoin/Verus-Mobile',
       shortDescription: 'Contribution to mobile app features',
@@ -303,6 +303,42 @@ export const devProjects:DevProject[] = [
         '/projects/pethealth10.png',
         '/projects/pethealth11.png',
         '/projects/pethealth12.png',
+      ]
+    },
+    {
+      name:'navora',
+      title:'Navora LMS',
+      slug:'navora',
+      img:'/covers/navora-min.png',
+      shortDescription:'Learning Management System',
+      toolsUsed:'Figma',
+      longDescription:'Redesigned LMS to improve students, learners and mentors experience across the application. Previous Dashboard was very poor UI/UX wise and stepped in to rework it to make sure users have a smoother experience navigating and achieving their goals.',
+      caseStudyLink:'',
+      images: [
+        '/projects/navora1.png',
+        '/projects/navora2.png',
+        '/projects/navora3.png',
+        '/projects/navora4.png',
+        '/projects/navora5.png',
+        '/projects/navora6.png',
+        '/projects/navora7.png',
+        '/projects/navora8.png',
+        '/projects/navora9.png',
+        '/projects/navora10.png',
+        '/projects/navora11.png',
+        '/projects/navora12.png',
+      ]
+    },
+    {
+      name:'omie',
+      title:'Omie',
+      slug:'omie',
+      img:'/covers/omie-min.png',
+      shortDescription:'Mental Wellness Landing Page',
+      toolsUsed:'Figma',
+      caseStudyLink:'',
+      images: [
+        '/projects/omiepng.png'
       ]
     },
     {
