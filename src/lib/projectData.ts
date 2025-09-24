@@ -85,7 +85,7 @@ export const devProjects:DevProject[] = [
       name:'contractor-lead-flow',
       img: '/covers/clf-min.png',
       title: 'Contractor Lead Flow',
-      link: 'https://contractorleadflow.com',
+      link: 'https://clflow.vercel.app/',
       shortDescription: 'Built full website with Stripe Integration.',
       longDescription: 'Designed and developed the entire website, including landing page, pricing sections, and Stripe payment integration, using Next.js and Framer Motion.',
       tag: 'Design',
