@@ -81,6 +81,22 @@ export const devProjects:DevProject[] = [
          '/projects/glfzy8.png',
         ]
     },
+     {
+      name:'gldc',
+      title:'GLDC',
+      link:'https://gldc.world',
+      img:'/covers/gldc-min.png',
+      shortDescription:'Crypto Token Website',
+      longDescription:'Design and Development of website and Swap Implementation for a GOLD backed crypto token on SUI Network',
+      toolsUsed:'Figma, Nextjs',
+      tag: 'Design',
+      role:'Designer and Developer',
+      images: [
+        '/projects/gldc1.png',
+        '/projects/gldc2.png',
+        '/projects/gldc3.png'
+      ]
+    },
       {
       name:'contractor-lead-flow',
       img: '/covers/clf-min.png',
