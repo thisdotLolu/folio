@@ -250,6 +250,59 @@ export const devProjects:DevProject[] = [
 
   export const designProjects:DesignProject[] = [
     {
+      name:'autoecom',
+      title:'AutoEcom',
+      slug:'autoecom',
+      img:'/covers/autoecomlanding.png',
+      shortDescription:'Ecommerce Logistics Landing Page',
+      longDescription:'Landing page for an Ecommerce logistics company that provides shipping and delivery solutions for online stores.',
+      toolsUsed:'Figma',
+      caseStudyLink:'',
+      images: [
+        '/projects/autoecom-landing.png',
+        '/projects/autoecom1.png',
+        '/projects/autoecom2.png',
+        '/projects/autoecom3.png',
+        '/projects/autoecom4.png',
+        '/projects/autoecom5.png',
+        '/projects/autoecom6.png',
+        '/projects/autoecom7.png',
+        '/projects/autoecom8.png',
+        '/projects/autoecom9.png',
+        '/projects/autoecom10.png',
+        '/projects/autoecom11.png',
+        '/projects/autoecom12.png',
+        '/projects/autoecom13.png',
+        '/projects/autoecom14.png',
+      ]
+    },
+    {
+      name:'autoecom-dashboard',
+      title:'AutoEcom Dashboard',
+      slug:'autoecom-dashboard',
+      img:'/covers/autoecom-dashboard.png',
+      shortDescription:'Ecommerce Logistics Dashboard',
+      longDescription:'Dashboard design for an Ecommerce logistics company that provides shipping and delivery solutions for online stores.',
+      toolsUsed:'Figma',
+      caseStudyLink:'Coming Soon',
+      images: [
+        '/projects/autoecom1.png',
+        '/projects/autoecom2.png',
+        '/projects/autoecom3.png',
+        '/projects/autoecom4.png',
+        '/projects/autoecom5.png',
+        '/projects/autoecom6.png',
+        '/projects/autoecom7.png',
+        '/projects/autoecom8.png',
+        '/projects/autoecom9.png',
+        '/projects/autoecom10.png',
+        '/projects/autoecom11.png',
+        '/projects/autoecom12.png',
+        '/projects/autoecom13.png',
+        '/projects/autoecom14.png',
+      ]
+    },
+    {
       name:'testnet',
       title:'Testnet',
       slug:'testnet',
@@ -260,6 +313,18 @@ export const devProjects:DevProject[] = [
       caseStudyLink:'',
       images: [
         '/projects/testnet.png'
+      ]
+    },
+      {
+      name:'omie',
+      title:'Omie',
+      slug:'omie',
+      img:'/covers/omie-min.png',
+      shortDescription:'Mental Wellness Landing Page',
+      toolsUsed:'Figma',
+      caseStudyLink:'',
+      images: [
+        '/projects/omie-landing.png'
       ]
     },
     {
@@ -345,42 +410,30 @@ export const devProjects:DevProject[] = [
         '/projects/navora12.png',
       ]
     },
-    {
-      name:'omie',
-      title:'Omie',
-      slug:'omie',
-      img:'/covers/omie-min.png',
-      shortDescription:'Mental Wellness Landing Page',
-      toolsUsed:'Figma',
-      caseStudyLink:'',
-      images: [
-        '/projects/omiepng.png'
-      ]
-    },
-    {
-      name:'golden-vault',
-      title:'Golden Vault',
-      slug:'golden-vault',
-      img:'/covers/goldenvault-min.png',
-      shortDescription:'Community Landing Page',
-      toolsUsed:'Figma',
-      caseStudyLink:'',
-      images: [
-        '/projects/goldenvault.png'
-      ]
-    },
-    {
-      name:'henry-ai',
-      title:'Henry AI',
-      slug:'henry-ai',
-      img:'/covers/henryai-min.png',
-      shortDescription:'AI Startup Landing Page',
-      toolsUsed:'Figma',
-      caseStudyLink:'',
-      images: [
-        '/projects/henryai.png'
-      ]
-    },
+    // {
+    //   name:'golden-vault',
+    //   title:'Golden Vault',
+    //   slug:'golden-vault',
+    //   img:'/covers/goldenvault-min.png',
+    //   shortDescription:'Community Landing Page',
+    //   toolsUsed:'Figma',
+    //   caseStudyLink:'',
+    //   images: [
+    //     '/projects/goldenvault.png'
+    //   ]
+    // },
+    // {
+    //   name:'henry-ai',
+    //   title:'Henry AI',
+    //   slug:'henry-ai',
+    //   img:'/covers/henryai-min.png',
+    //   shortDescription:'AI Startup Landing Page',
+    //   toolsUsed:'Figma',
+    //   caseStudyLink:'',
+    //   images: [
+    //     '/projects/henryai.png'
+    //   ]
+    // },
   ]
 
 
