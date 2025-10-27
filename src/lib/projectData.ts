@@ -260,20 +260,6 @@ export const devProjects:DevProject[] = [
       caseStudyLink:'',
       images: [
         '/projects/autoecom-landing.png',
-        '/projects/autoecom1.png',
-        '/projects/autoecom2.png',
-        '/projects/autoecom3.png',
-        '/projects/autoecom4.png',
-        '/projects/autoecom5.png',
-        '/projects/autoecom6.png',
-        '/projects/autoecom7.png',
-        '/projects/autoecom8.png',
-        '/projects/autoecom9.png',
-        '/projects/autoecom10.png',
-        '/projects/autoecom11.png',
-        '/projects/autoecom12.png',
-        '/projects/autoecom13.png',
-        '/projects/autoecom14.png',
       ]
     },
     {
