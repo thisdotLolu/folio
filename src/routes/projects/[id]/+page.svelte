@@ -59,7 +59,7 @@ function nav_back() {
 
 <div class="relative font-inter bg-white w-full h-full">
   <div
-    class="relative z-10 md:max-w-[1300px] mx-auto flex flex-col items-center justify-start"
+    class="relative z-10 md:max-w-[1350px] mx-auto flex flex-col items-center justify-start"
   >
     <Navbar on:navigate={(event) => smoothScrollTo(event.detail.hash)} />
 
@@ -119,7 +119,7 @@ function nav_back() {
           </p>
         </div>
 
-        {#if images.length > 0 && title !== "Pet Health"}
+        {#if images.length > 0 && (title !== "Pet Health" && title !== "Vently" ) }
           <div class="mb-8">
             <h2 class="text-2xl font-semibold mb-4 tracking-[-1px]">
               Project Images
@@ -145,14 +145,14 @@ function nav_back() {
               Project Images
             </h2>
             <div
-              class="grid md:grid-cols-4 grid-cols-1 gap-4 place-items-center"
+              class="grid md:grid-cols-4 grid-cols-1 gap-4 place-items-start"
             >
               {#each images as image, index}
                 <img
-                 srcset={image}
-                    fetchpriority="high"
+                  srcset={image}
+                  fetchpriority="high"
                   alt="{title} screenshot {index + 1}"
-                  class="object-cover shadow-2xl transition-transform duration-300 h-[450px]"
+                  class="shadow-2xl transition-transform duration-300 rounded-3xl"
                 />
               {/each}
             </div>
