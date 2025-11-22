@@ -22,7 +22,7 @@ const links = [
   </script>
 
 
-  <div class="font-inter w-full mt-[40px] md:px-10 px-4 md:flex-row flex-col flex items-start justify-between pt-[50px]">
+  <div class="font-inter w-full mt-[60px] md:px-10 px-4 md:flex-row flex-col flex items-start justify-between pt-[50px]">
       <div class='md:w-[65%] w-full'>
         <div class="w-fit p-[3px] border border-dashed border-[#b1b6bf] text-[#7a8293] text-[.7rem] rounded-full flex items-center gap-1">
           <span class='bg-green-500 h-[5px] w-[5px] rounded-[100%]'></span>
