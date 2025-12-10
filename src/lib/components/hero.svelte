@@ -9,6 +9,8 @@
   import Fiverr from './hero-cons/Integration icons/fiverr-1.svg'
   import Contra from "./hero-cons/Integration icons/contra.svelte";
   import Github from "./hero-cons/Integration icons/github.svelte";
+  import Odysee from "./hero-cons/odysee.svelte";
+  import Upworkk from "./hero-cons/Integration icons/upworkk.svelte";
 
 const links = [
   {name:'Github',logo:Github,link:'https://github.com/thisdotlolu'},
@@ -18,6 +20,7 @@ const links = [
   {name:'Discord',logo:Discord,link:'https://discordapp.com/users/lolu0000/'},
   {name:'Contra',logo:Contra,link:'https://contra.com/davidebe63_si06kjvk'},
   {name:'Fiverr',logo:Fiverr,link:'https://www.fiverr.com/lolu18'},
+  {name:'Upwork',logo:Upworkk,link:'https://www.upwork.com/freelancers/~01ba046b599883e3d0'},
 ]
   </script>
 
@@ -38,7 +41,9 @@ const links = [
         </div>
         <p 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {3 * 0.2}s; opacity: 0; transform: translateY(10px);"
-        class='text-[#7a8293] mt-[10px]'>With over 5 years of experience in software development and UI/UX design across a broad range of industries, I solve product and business problems using tools such as Figma, no-code web and e-commerce store builders, TypeScript, React/Next.js, React Native, SvelteKit, Node.js, and various databases.</p>
+        class='text-[#7a8293] mt-[10px]'>With over 5 years of experience in software development and UI/UX design across a broad range of industries, I solve product and business problems using tools such as Figma, no-code web and e-commerce store builders, TypeScript, React/Next.js, React Native, SvelteKit, Node.js, and various databases.
+        <span class='flex w-full mt-3 text-[.9rem]'>I most recently worked as a Web Engineer at &nbsp; <span> <Odysee/> </span> <a class='text-black font-bold hover:underline' target="_blank" href='https://odysee.com/'>Odysee</a>, one of the largest decentralized video-sharing platform.</span> 
+      </p>
         <div 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {4 * 0.2}s; opacity: 0; transform: translateY(10px);"
         class="mt-[30px] w-full flex items-center">
