@@ -42,7 +42,7 @@ const links = [
         <p 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {3 * 0.2}s; opacity: 0; transform: translateY(10px);"
         class='text-[#7a8293] mt-[10px]'>With over 5 years of experience in software development and UI/UX design across a broad range of industries, I solve product and business problems using tools such as Figma, no-code web and e-commerce store builders, TypeScript, React/Next.js, React Native, SvelteKit, Node.js, and various databases.
-        <span class='flex w-full mt-3 text-[.9rem]'>I most recently worked as a Web Engineer at &nbsp; <span> <Odysee/> </span> <a class='text-black font-bold hover:underline' target="_blank" href='https://odysee.com/'>Odysee</a>, one of the largest decentralized video-sharing platform.</span> 
+         <span class='inline-flex flex-wrap gap-1 mt-3 text-[.9rem] items-center'> I most recently worked as a Web Engineer at &nbsp; <span> <Odysee/> </span> <a class='text-black font-bold hover:underline' target="_blank" href='https://odysee.com/'>Odysee</a>, one of the largest decentralized video-sharing platform.</span> 
       </p>
         <div 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {4 * 0.2}s; opacity: 0; transform: translateY(10px);"
