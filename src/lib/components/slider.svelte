@@ -9,7 +9,10 @@
               <img 
               class=''
               alt='dump'
-              src={dump}/>
+              src={dump}
+              loading='lazy'
+              fetchpriority="auto"
+              />
           </div>
           {/each}
       </div>

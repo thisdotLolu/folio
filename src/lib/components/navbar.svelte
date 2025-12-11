@@ -134,6 +134,8 @@ onMount(async () => {
           class='border-[#fff] border-[2px] rounded-md h-[35px] w-[35px] object-cover shadow-md'
           src={me}
           alt='Lolu David'
+          loading='lazy'
+          fetchpriority="auto"
         />    
       </a>
       
