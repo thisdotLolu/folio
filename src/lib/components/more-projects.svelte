@@ -17,7 +17,7 @@
       <a href="/projects/{name}?tab={activeTab}"
         class="w-full gap-[10px] flex items-center justify-start text-[.8rem] md:text-[1rem]"
       >
-        <img class="w-[50px] h-[50px] object-cover border-[5px] shadow border-white" srcset={img} alt={title} />
+        <img class="w-[50px] h-[50px] object-cover border-[5px] shadow border-white rounded-md" srcset={img} alt={title} />
         <p class='text-[#6f6d6d] hover:underline cursor-pointer'>{title}</p>
       </a>
     {/each}
