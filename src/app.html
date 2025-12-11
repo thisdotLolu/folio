@@ -1,12 +1,27 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta property="og:title" content="Lolu - Developer and Designer" />
+	<meta property="og:description"
+		content="Lolu is a full-stack developer and UI/UX designer specializing in designing and creating modern, responsive web applications. Explore my portfolio to see my work." />
+	<meta property="og:image" content="https://lolu.work/og-image.png" />
+	<meta property="og:url" content="https://lolu.work/" />
+	<meta property="og:type" content="website" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Lolu - Developer and Designer" />
+	<meta name="twitter:description"
+		content="Lolu is a full-stack developer and UI/UX designer specializing in designing and creating modern, responsive web applications. Explore my portfolio to see my work." />
+	<meta name="twitter:image" content="https://lolu.work/og-image.png" />
+	%sveltekit.head%
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+</body>
+
 </html>
