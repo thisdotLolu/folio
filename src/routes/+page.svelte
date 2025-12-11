@@ -93,7 +93,7 @@ $:console.log($overlayOpacity)
     <Hero />
     <div 
     id='work'
-    class="mt-[100px] flex flex-col items-center justify-center w-full md:px-10 px-4">
+    class="mt-[50px] md:mt-[100px] flex flex-col items-center justify-center w-full md:px-10 px-4">
       <Subnav bind:activeTab />
       <Projects {activeTab} />
     </div>
