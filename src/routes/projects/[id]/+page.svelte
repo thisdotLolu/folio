@@ -130,9 +130,7 @@ function nav_back() {
                   class="bg-gray-100 shadow-2xl h-fit rounded-lg overflow-hidden"
                 >
                   <img
-                    srcset={image}   
-                    loading='lazy'
-                    fetchpriority="auto"
+                    srcset={image}
                     alt="{title} screenshot {index + 1}"
                     class="object-contain transition-transform duration-300"
                   />
@@ -151,8 +149,6 @@ function nav_back() {
               {#each images as image, index}
                 <img
                   srcset={image}
-                  loading='lazy'
-                  fetchpriority="auto"
                   alt="{title} screenshot {index + 1}"
                   class="shadow-2xl transition-transform duration-300 rounded-3xl"
                 />

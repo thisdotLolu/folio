@@ -79,8 +79,6 @@ const links = [
           class='h-[32px] w-[32px]'
           src={item.logo}
           alt='logo'
-          loading='lazy'
-          fetchpriority="auto"
           />
           {:else}
           <span class="w-fit h-fit">
@@ -113,8 +111,6 @@ const links = [
           class='h-[32px] w-[32px]'
           src={item.logo}
           alt='logo'
-          loading='lazy'
-          fetchpriority="auto"
           />
           {:else}
           <span class="w-fit h-fit">

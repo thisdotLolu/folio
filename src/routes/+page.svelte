@@ -11,6 +11,7 @@ import { tweened } from "svelte/motion";
   import Lenis from 'lenis';
   import Footer from '$lib/components/footer.svelte';
   import { page } from '$app/stores';
+  import MoreProjects from '$lib/components/more-projects.svelte';
 
   const overlayOpacity = tweened(0, { duration: 300, easing: cubicOut });
   let triggerSection: HTMLElement;
@@ -93,9 +94,10 @@ $:console.log($overlayOpacity)
     <Hero />
     <div 
     id='work'
-    class="mt-[50px] md:mt-[100px] flex flex-col items-center justify-center w-full md:px-10 px-4">
+    class=" mt-[50px] md:mt-[100px] flex flex-col items-center justify-center w-full md:px-10 px-4">
       <Subnav bind:activeTab />
       <Projects {activeTab} />
+      <MoreProjects {activeTab}/>
     </div>
   </div>
   <div bind:this={triggerSection} class='w-full'>

@@ -20,7 +20,6 @@ register();
  const spaceBetween = 10;
   const onProgress = (e: CustomEvent<[swiper: any, progress: number]>) => {
   const [swiper, progress] = e.detail;
-    console.log(progress);
   };
 
 

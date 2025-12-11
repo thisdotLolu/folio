@@ -7,6 +7,22 @@ export function linkify(text: string) {
 
 export const devProjects:DevProject[] = [
   {
+    name:'odysee',
+    img: '/covers/odysee.png',
+    title: 'Odysee',
+    link: 'https://odysee.com',
+    shortDescription: 'Decentralized Video Platform, Youtube alternative.',
+    longDescription: 'I contributed to the development of Odysee’s new Shorts feature, delivering a responsive, high-performance video experience across mobile and desktop. This included implementing autoplay logic, navigation/URL state synchronization, video aspect-ratio handling, scroll-driven UI behavior, and Redux-based state flows for recommended content. I refactored core React components to improve maintainability and performance, managed state with Redux resolved long-standing rendering issues (duplicate key warnings, unnecessary rerenders), and collaborated closely with the engineering team to ship a stable, scalable feature now used in production. My work focused heavily on debugging complex UI behavior, improving performance, and ensuring a polished user experience.',
+    tag: 'Development',
+    role:'Contractual Senior Frontend Engineer',
+    toolsUsed:'React, Redux, Sentry, Flow, Arweave',
+    images: [
+     '/projects/odysee1.png',
+     '/projects/odysee2.png',
+     '/projects/odysee3.png',
+    ]
+  },
+  {
     name:'rollpay',
     img: '/covers/rollpay-min.png',
     title: 'Rollpay',

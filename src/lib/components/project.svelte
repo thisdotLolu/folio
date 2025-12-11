@@ -17,8 +17,6 @@
     class="w-full object-contain"
     srcset={img}
     alt={title}
-    loading='lazy'
-    fetchpriority="auto"
   />
 
 

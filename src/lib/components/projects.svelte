@@ -8,7 +8,7 @@
     <p class='my-6 text-[1.3rem] tracking-[-.5px] w-full text-center'>Selected Works</p>
     {#if activeTab === 'Development'}
     <div class='w-full grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 place-items-center gap-5'>
-        {#each devProjects as project,index}
+        {#each devProjects.slice(0,9) as project}
         <Project
         {activeTab}
         img={project.img}
