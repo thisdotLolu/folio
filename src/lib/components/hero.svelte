@@ -33,10 +33,10 @@ const links = [
         </div>
         <span 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.2}s; opacity: 0; transform: translateY(10px);"
-        class='animation: fadeInUp font-regular md:tracking-[-3px] tracking-tighter text-[2.4rem] md:text-[3rem] font-fraunces font-light'>Hi there,  <span class='text-[#838486]'>I'm Lolu.</span></span>
+        class='animation: fadeInUp font-regular md:tracking-[-3px] leading-[55px] tracking-tighter text-[2.4rem] md:text-[3rem] font-fraunces font-light'>Hi there,  <span class='text-[#838486]'>I'm Lolu.</span></span>
         <div 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {2 * 0.2}s; opacity: 0; transform: translateY(10px);"
-        class="mb-[5px] md:mb-[20px] md:leading-[55px] leading-[50px] animation: fadeInUp tracking-tighter md:tracking-[-3px] text-[2.4rem] md:text-[3rem] font-fraunces font-light">
+        class="mb-[5px] md:mb-[20px] md:leading-[55px] leading-[45px] animation: fadeInUp tracking-tighter md:tracking-[-3px] text-[2.5rem] md:text-[3rem] font-fraunces font-light">
           a <span class='text-[#838486] inline-flex items-center'>Developer <Span/> </span> and <span class='text-[#838486] inline-flex items-center font-fraunces font-light'>Designer <DesignerSpan/> </span> focused on delivering <span class="text-[#ccd0d8] bg-[#000]">exceptional</span> and  <span class='text-[#ccd0d8] bg-[#000]'>complex software</span>
         </div>
         <p 
@@ -59,7 +59,7 @@ const links = [
         <a 
         target="_blank"
         href='https://calendar.app.google/4PWEEC1grsbukDpe9'
-        class='text-[#000] w-fit p-[10px] h-[30px] rounded-2xl flex items-center justify-center '>
+        class='text-[#000] w-fit p-[10px] ml-[30px] h-[30px] rounded-2xl flex items-center justify-center '>
           Book a Call <ArrowUpRight size={15}/>
         </a>
         </div>
