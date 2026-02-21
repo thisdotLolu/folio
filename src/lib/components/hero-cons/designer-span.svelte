@@ -4,6 +4,6 @@
   import Framer from "./Integration icons/framer.svelte";
 
 </script>
-<span class="flex items-center">
+<span class="flex items-center mt-2">
    <Figma/> <Framer/> <AdobePhotoshop/>
 </span>

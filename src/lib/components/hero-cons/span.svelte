@@ -5,6 +5,6 @@ import Svlte from "../hero-cons/svlte.svelte";
   import Typescript from "../hero-cons/typescript.svelte";
 </script>
 
-<span class="flex items-center">
+<span class="flex items-center mt-2">
     <Svlte /> <Node /> <Next /> <Typescript />
 </span>
