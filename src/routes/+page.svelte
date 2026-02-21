@@ -91,7 +91,9 @@ $:console.log($overlayOpacity)
     on:navigate={(event) => smoothScrollTo(event.detail.hash)}
     bind:isOverlayVisible
     />
+    <div class="w-full">
     <Hero />
+    </div>
     <div 
     id='work'
     class=" mt-[50px] md:mt-[100px] flex flex-col items-center justify-center w-full md:px-10 px-4">

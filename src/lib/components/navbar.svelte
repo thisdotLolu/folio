@@ -13,7 +13,7 @@ const menuItems: {
 }[] = [
   { path: "#work", label: "Work"},
   { path: "#about", label: "About me"},
-  { path: "#dump", label: "Random"},
+  { path: "#dump", label: "Archive"},
 ];
 
 import { onMount } from 'svelte';

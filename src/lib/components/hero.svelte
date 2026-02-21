@@ -11,6 +11,7 @@
   import Github from "./hero-cons/Integration icons/github.svelte";
   import Odysee from "./hero-cons/odysee.svelte";
   import Upworkk from "./hero-cons/Integration icons/upworkk.svelte";
+  import portfoliodecor from '../assets/me/portfolio-decor.png'
 
 const links = [
   {name:'Github',logo:Github,link:'https://github.com/thisdotlolu'},
@@ -25,32 +26,32 @@ const links = [
   </script>
 
 
-  <div class="font-inter w-full mt-[60px] md:px-10 px-4 md:flex-row flex-col flex items-start justify-between pt-[50px]">
+  <div class="z-10 relative bg-[#000] rounded-2xl font-inter mt-[70px] w-[94%] mx-auto md:px-10 px-4 md:flex-row flex-col flex items-start justify-between py-[50px]">
       <div class='md:w-[65%] w-full'>
-        <div class="w-fit p-[3px] border border-dashed border-[#b1b6bf] text-[#7a8293] text-[.7rem] rounded-full flex items-center gap-1">
+        <div class="w-fit p-[3px] border border-dashed border-[#b1b6bf] text-[#95979a] text-[.7rem] rounded-full flex items-center gap-1">
           <span class='bg-green-500 h-[5px] w-[5px] rounded-[100%]'></span>
           Always online ;)
         </div>
         <span 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.2}s; opacity: 0; transform: translateY(10px);"
-        class='animation: fadeInUp font-medium tracking-[-1px] text-[1.7rem] md:text-[2rem]'>Hi there  <span class='text-[#7a8293]'>I'm Lolu.</span></span>
+        class='text-white! animation: fadeInUp font-regular tracking-[-1px] text-[1.7rem] md:text-[2rem] font-fraunces font-light'>Hi there  <span class='text-[#95979a]'>I'm Lolu.</span></span>
         <div 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {2 * 0.2}s; opacity: 0; transform: translateY(10px);"
-        class="mb-[5px] md:mb-[20px] leading-[40px] animation: fadeInUp tracking-[-1.3px] md:tracking-[-1px] text-[1.7rem] md:text-[2rem]">
-          I'm a <span class='text-[#7a8293] inline-flex items-center'>Developer <Span/> </span> and <span class='text-[#7a8293] inline-flex items-center'>Designer <DesignerSpan/> </span> focused on delivering <span class="text-[#ccd0d8] bg-[#000]">exceptional</span> user experiences while implementing  <span class='text-[#ccd0d8] bg-[#000]'>complex software</span> functionality with clean, maintainable, and scalable code.
+        class="z-10 relative text-white! mb-[5px] md:mb-[20px] leading-[40px] animation: fadeInUp tracking-[-1.3px] md:tracking-[-1px] text-[1.7rem] md:text-[2rem] font-fraunces font-light">
+          I'm a <span class='text-[#95979a] inline-flex items-center'>Developer <Span/> </span> and <span class='text-[#95979a] inline-flex items-center font-fraunces font-light'>Designer <DesignerSpan/> </span> focused on delivering <span class="text-[#303030] bg-[#fff]">exceptional</span> user experiences while implementing  <span class='text-[#303030] bg-[#fff]'>complex software</span> functionality with clean, maintainable, and scalable code.
         </div>
         <p 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {3 * 0.2}s; opacity: 0; transform: translateY(10px);"
-        class='text-[#7a8293] mt-[5px] md:mt-[10px] !font-extralight'>With over 5 years of experience in software development and UI/UX design across a broad range of industries, I solve product and business problems using tools such as Figma, no-code web and e-commerce store builders, TypeScript, React/Next.js, React Native, SvelteKit, Node.js, and various databases.
-         <span class='inline-flex flex-wrap gap-1 mt-3 text-[.9rem] items-center'> I most recently worked as a Web Engineer at &nbsp; <span> <Odysee/> </span> <a class='text-black font-bold hover:underline' target="_blank" href='https://odysee.com/'>Odysee</a>, one of the largest decentralized video-sharing platform.</span> 
+        class='text-[#c6c9d0] mt-[20px] md:mt-[10px] font-light z-10 relative'>With over 5 years of experience in software development and UI/UX design across a broad range of industries, I solve product and business problems using tools such as Figma, no-code web and e-commerce store builders, TypeScript, React/Next.js, React Native, SvelteKit, Node.js, and various databases.
+         <span class='inline-flex flex-wrap gap-1 mt-3 text-[.9rem] items-center z-10 relative'> I most recently worked as a Web Engineer at &nbsp; <span> <Odysee/> </span> <a class=' font-bold hover:underline' target="_blank" href='https://odysee.com/'>Odysee</a>, one of the largest decentralized video-sharing platform.</span> 
       </p>
         <div 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {4 * 0.2}s; opacity: 0; transform: translateY(10px);"
-        class="mt-[30px] w-full flex items-center">
+        class="z-10 relative mt-[30px] w-full flex items-center gap-[20px]">
         <a 
         target="_blank"
         href='mailto:davidebe63@gmail.com'
-        class='gap-1 text-[#fff] bg-[#000] w-fit p-[10px] h-[40px] rounded-[30px] flex items-center justify-center px-[20px]'>
+        class='gap-1 text-[#000] bg-[#fff] w-fit p-[10px] h-[40px] rounded-[15px] flex items-center justify-center px-[20px]'>
           Send an email 
           <Mail
           size={14}
@@ -59,14 +60,14 @@ const links = [
         <a 
         target="_blank"
         href='https://calendar.app.google/4PWEEC1grsbukDpe9'
-        class='text-[#000] w-fit p-[10px] h-[30px] rounded-2xl flex items-center justify-center '>
+        class='text-[#fff] rounded-[15px] w-fit p-[10px] h-[40px] flex items-center justify-center border border-white'>
           Book a Call <ArrowUpRight size={15}/>
         </a>
         </div>
       </div>
   
       <div class="flex gap-4 my-[20px] md:mt-0 mt-[50px]">
-        <div class="flex flex-col items-start justify-center gap-2">
+        <div class="z-10 relative flex flex-col items-start justify-center gap-2">
           {#each links.slice(0,4) as item, index (item.name)}
           <a
             class="group text-[1.6rem] font-medium flex items-center gap-1 text-[#181b21] hover:text-primary transition-all duration-300 relative overflow-hidden"
@@ -87,7 +88,7 @@ const links = [
           {/if}
 
             <span class="relative">
-              <span class="relative z-1 tracking-[-1px]">{item.name}</span>
+              <span class="relative z-1 tracking-[-1px] font-fraunces font-light text-[#c6c9d0]">{item.name}</span>
               <span
                 class="absolute left-0 bottom-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"
               ></span>
@@ -98,7 +99,7 @@ const links = [
           </a>
         {/each}
         </div>
-        <div class="flex flex-col items-start justify-start gap-2">
+        <div class="z-10 relative flex flex-col items-start justify-start gap-2">
           {#each links.slice(4,8) as item, index (item.name)}
           <a
             class="group text-[1.6rem] font-medium flex items-center gap-1 text-[#181b21] hover:text-primary transition-all duration-300 relative overflow-hidden"
@@ -119,7 +120,7 @@ const links = [
           {/if}
 
             <span class="relative">
-              <span class="relative z-1 tracking-[-1px]">{item.name}</span>
+              <span class="relative z-1 tracking-[-1px] font-fraunces font-light text-[#c6c9d0]">{item.name}</span>
               <span
                 class="absolute left-0 bottom-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"
               ></span>
@@ -131,5 +132,9 @@ const links = [
         {/each}
         </div>
       </div>
-  
+      <img
+      class='absolute bottom-0 left-0 z-1'
+      src={portfoliodecor}
+      alt='Lolu David'
+      />
   </div>

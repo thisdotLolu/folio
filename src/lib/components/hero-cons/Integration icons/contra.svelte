@@ -4,6 +4,7 @@
   width="32"
   xmlns="http://www.w3.org/2000/svg"
   fill="none"
+  class='bg-white p-1 rounded-[5px]'
   style="min-height: 24px; min-width: 24px; opacity: 1;"
   ><svg
     fill="none"

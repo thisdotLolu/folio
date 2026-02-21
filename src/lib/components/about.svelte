@@ -30,7 +30,7 @@ register();
     <div class='md:flex-row flex-col flex items-start justify-between md:mt-[40px] mt-[20px] gap-[100px]'>
         <div 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.2}s; opacity: 0; transform: translateY(10px);"
-        class='flex flex-col items-start justify-start md:text-[4rem] text-[3.4rem] md:w-[40%] w-full text-[#d3d3d3] tracking-[-2px] md:leading-[60px] leading-[50px]'>
+        class='font-fraunces flex flex-col items-start justify-start md:text-[4rem] text-[3.4rem] md:w-[40%] w-full text-[#d3d3d3] tracking-[-2px] md:leading-[60px] leading-[50px]'>
             Full-Stack Developer & UI/UX Designer
             <div 
             style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.3}s; opacity: 0; transform: translateY(10px);"
