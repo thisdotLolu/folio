@@ -27,21 +27,21 @@ const links = [
 
   <div class="font-inter w-full mt-[60px] md:px-10 px-4 md:flex-row flex-col flex items-start justify-between pt-[50px]">
       <div class='md:w-[65%] w-full'>
-        <div class="w-fit p-[3px] border border-dashed border-[#b1b6bf] text-[#7a8293] text-[.7rem] rounded-full flex items-center gap-1">
+        <div class="w-fit p-[3px] border border-dashed border-[#b1b6bf] text-[#838486] text-[.7rem] rounded-full flex items-center gap-1">
           <span class='bg-green-500 h-[5px] w-[5px] rounded-[100%]'></span>
           Always online ;)
         </div>
         <span 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.2}s; opacity: 0; transform: translateY(10px);"
-        class='animation: fadeInUp font-regular md:tracking-[-3px] tracking-tighter text-[2.4rem] md:text-[3rem] font-fraunces font-light'>Hi there,  <span class='text-[#7a8293]'>I'm Lolu.</span></span>
+        class='animation: fadeInUp font-regular md:tracking-[-3px] tracking-tighter text-[2.4rem] md:text-[3rem] font-fraunces font-light'>Hi there,  <span class='text-[#838486]'>I'm Lolu.</span></span>
         <div 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {2 * 0.2}s; opacity: 0; transform: translateY(10px);"
         class="mb-[5px] md:mb-[20px] md:leading-[55px] leading-[50px] animation: fadeInUp tracking-tighter md:tracking-[-3px] text-[2.4rem] md:text-[3rem] font-fraunces font-light">
-          a <span class='text-[#7a8293] inline-flex items-center'>Developer <Span/> </span> and <span class='text-[#7a8293] inline-flex items-center font-fraunces font-light'>Designer <DesignerSpan/> </span> focused on delivering <span class="text-[#ccd0d8] bg-[#000]">exceptional</span> and  <span class='text-[#ccd0d8] bg-[#000]'>complex software</span>
+          a <span class='text-[#838486] inline-flex items-center'>Developer <Span/> </span> and <span class='text-[#838486] inline-flex items-center font-fraunces font-light'>Designer <DesignerSpan/> </span> focused on delivering <span class="text-[#ccd0d8] bg-[#000]">exceptional</span> and  <span class='text-[#ccd0d8] bg-[#000]'>complex software</span>
         </div>
         <p 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {3 * 0.2}s; opacity: 0; transform: translateY(10px);"
-        class='text-[#7a8293] mt-[20px] md:mt-[10px] font-light'>i've gathered over 5 years of experience in software development and UI/UX design across a broad range of industries, I solve product and business problems using tools such as Figma, no-code web and e-commerce store builders, TypeScript, React/Next.js, React Native, SvelteKit, Node.js, and various databases.
+        class='text-[#565656] mt-[20px] md:mt-[10px] font-light'>i've gathered over 5 years of experience in software development and UI/UX design across a broad range of industries, I solve product and business problems using tools such as Figma, no-code web and e-commerce store builders, TypeScript, React/Next.js, React Native, SvelteKit, Node.js, and various databases.
          <span class='inline-flex flex-wrap gap-1 mt-3 text-[.9rem] items-center'> I most recently worked as a Web Engineer at &nbsp; <span> <Odysee/> </span> <a class=' font-bold hover:underline' target="_blank" href='https://odysee.com/'>Odysee</a>, one of the largest decentralized video-sharing platform.</span> 
       </p>
         <div 
