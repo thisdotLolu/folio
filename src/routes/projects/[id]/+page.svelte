@@ -75,7 +75,7 @@ function nav_back() {
         </button>
         <div class="mb-8">
           <h1
-            class="text-4xl font-bold mb-4 tracking-[-2px] md:tracking-[-.10px]"
+            class="text-4xl font-medium mb-4 tracking-[-2px] md:tracking-[-1px]"
           >
             {title}
           </h1>
@@ -114,7 +114,7 @@ function nav_back() {
           <h2 class="text-2xl tracking-[-1px] font-semibold mb-1">
             Description
           </h2>
-          <p class="text-[#7a8293] leading-relaxed font-thin tracking-[-.5px]">
+          <p class="text-[#7a8293] leading-relaxed font-light tracking-[-.2px]">
             {@html linkify(longDescription)}
           </p>
         </div>
