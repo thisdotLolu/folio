@@ -108,7 +108,6 @@ onMount(async () => {
 
   greetings = greetingsMap[period];
   currentGreeting = greetings[greetingIndex];
-  console.log("isActive", isActive);
 
 
   const loop = async () => {

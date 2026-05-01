@@ -6,17 +6,16 @@
   import { X } from '@lucide/svelte';
   import NavLink from './nav-link.svelte';
   import me from '../assets/me/me.jpg'
+  import { goto } from '$app/navigation';
 
 
   export let isActive: boolean;
   const dispatch = createEventDispatcher();
 
-  console.log("isActive", isActive);
-
   const navItems = [
     { title: "Work", href: "#work" },
     { title: "About", href: "#about" },
-    { title: "Gallery", href: "#dump" }
+    { title: "Gallery", href: "/gallery" }
   ];
 
   let selectedIndicator = "";
@@ -29,12 +28,26 @@
     selectedIndicator = get(page).url.pathname;
   }
 
-  function handleNavClick(event: MouseEvent, path: string) {
+
+  function smoothScrollTo(elementId: string) {
+  const element = document.getElementById(elementId.replace('#', ''));
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    });
+  }
+}
+
+function handleNavClick(event: MouseEvent, path: string) {
   event.preventDefault();
-  
-  window.history.pushState(null, '', path);
-  isActive = false;
-  dispatch('navigate', { hash: path });
+
+  if (path.startsWith('#')) {
+    smoothScrollTo(path);
+  } else {
+    goto(path);
+  }
 }
 
 </script>

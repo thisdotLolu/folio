@@ -72,8 +72,6 @@ let skill = $page.url.searchParams.get("skill") || "dev";
 $: isOverlayVisible = $overlayOpacity > 0 ;
 $: overlayIntensity = $overlayOpacity;
 
-$:console.log($overlayOpacity)
-
 </script>
 
 <svelte:head>
@@ -107,7 +105,7 @@ $:console.log($overlayOpacity)
      <section id="about" class="bg-transparent py-[100px] h-[1000px] w-full">
     <About {skill}/>
   </section>
-  <div class="overflow-x-hidden bg-[black]">
+  <div class="overflow-x-hidden bg-[black] mt-[500px]">
   <Footer/>
   </div>
 </div>
