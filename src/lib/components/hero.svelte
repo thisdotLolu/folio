@@ -11,9 +11,13 @@
   import Github from "./hero-cons/Integration icons/github.svelte";
   import Odysee from "./hero-cons/odysee.svelte";
   import Upworkk from "./hero-cons/Integration icons/upworkk.svelte";
+  import Dribbble from "./hero-cons/Integration icons/dribbble.svelte";
+  export let activeTab;
+  export let skill;
 
 const links = [
   {name:'Github',logo:Github,link:'https://github.com/thisdotlolu'},
+  {name:'Dribbble',logo:Dribbble,link:'https://dribbble.com/dexterrx'},
   {name:'Behance',logo:Behance,link:'https://behance.com/loludavid'},
   {name:'LinkedIn',logo:Linkedin,link:'https://www.linkedin.com/in/ebe-david-17b6921b0/'},
   {name:'Telegram',logo:Telegram,link:'https://t.me/lolu_xz'},
@@ -26,24 +30,41 @@ const links = [
 
 
   <div class="font-inter w-full mt-[60px] md:px-10 px-4 md:flex-row flex-col flex items-start justify-between pt-[50px]">
-      <div class='md:w-[65%] w-full'>
+      <div class='md:w-[70%] w-full'>
         <div class="w-fit p-[3px] border border-dashed border-[#b1b6bf] text-[#838486] text-[.7rem] rounded-full flex items-center gap-1">
           <span class='bg-green-500 h-[5px] w-[5px] rounded-[100%]'></span>
           Always online ;)
         </div>
         <span 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.2}s; opacity: 0; transform: translateY(10px);"
-        class='animation: fadeInUp font-regular md:tracking-[-3px] leading-[55px] tracking-tighter text-[2.4rem] md:text-[3rem] font-fraunces font-light'>Hi there,  <span class='text-[#838486]'>I'm Lolu.</span></span>
-        <div 
+        class='animation: fadeInUp font-regular md:tracking-[-3px] leading-[55px] tracking-tighter text-[2.4rem] md:text-[2.7rem] font-fraunces font-light'>Hi there,  <span class='text-[#838486]'>I'm Lolu.</span></span>
+        {#if skill === 'design'}
+         <div 
+        style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {2 * 0.2}s; opacity: 0; transform: translateY(10px);"
+        class="mb-[5px] md:mb-[20px] md:leading-[55px] leading-[45px] animation: fadeInUp tracking-tighter md:tracking-[-3px] text-[2.5rem] md:text-[2.7rem] font-fraunces font-light">
+        <span class='text-[#838486] inline-flex items-center font-fraunces font-light'>Product Designer <DesignerSpan/> </span> focused on crafting and delivering <span class="text-[#ccd0d8] bg-[#000]">intuitive</span> user experiences
+        </div>
+        {:else if skill === 'dev'}
+         <div 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {2 * 0.2}s; opacity: 0; transform: translateY(10px);"
         class="mb-[5px] md:mb-[20px] md:leading-[55px] leading-[45px] animation: fadeInUp tracking-tighter md:tracking-[-3px] text-[2.5rem] md:text-[3rem] font-fraunces font-light">
           a <span class='text-[#838486] inline-flex items-center'>Developer <Span/> </span> and <span class='text-[#838486] inline-flex items-center font-fraunces font-light'>Designer <DesignerSpan/> </span> focused on delivering <span class="text-[#ccd0d8] bg-[#000]">exceptional</span> and  <span class='text-[#ccd0d8] bg-[#000]'>complex software</span>
         </div>
+        {/if}
+        
+         {#if skill === 'dev'}
         <p 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {3 * 0.2}s; opacity: 0; transform: translateY(10px);"
         class='text-[#565656] mt-[20px] md:mt-[10px] font-light'>i've gathered over 5 years of experience in software development and UI/UX design across a broad range of industries, I solve product and business problems using tools such as Figma, no-code web and e-commerce store builders, TypeScript, React/Next.js, React Native, SvelteKit, Node.js, and various databases.
-         <span class='inline-flex flex-wrap gap-1 mt-3 text-[.9rem] items-center'> I most recently worked as a Web Engineer at &nbsp; <span> <Odysee/> </span> <a class=' font-bold hover:underline' target="_blank" href='https://odysee.com/'>Odysee</a>, one of the largest decentralized video-sharing platform.</span> 
+         <span class='inline-flex flex-wrap gap-1 mt-3 text-[.9rem] items-center'> I most recently worked as a Design Engineer at &nbsp; <span> <Odysee/> </span> <a class=' font-bold hover:underline' target="_blank" href='https://odysee.com/'>Odysee</a>, one of the largest decentralized video-sharing platform.</span> 
       </p>
+       {:else if skill === 'design'}
+        <p 
+        style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {3 * 0.2}s; opacity: 0; transform: translateY(10px);"
+        class='text-[#565656] mt-[20px] md:mt-[10px] font-light'>i've gathered over 5 years of experience in product design across a broad range of industries, I've designed and built complex design systems, designed complex software user interfaces to solve sophisticated product and business problems using tools such as Figma, no-code web and e-commerce store builders.
+         <span class='inline-flex flex-wrap gap-1 mt-3 text-[.9rem] items-center'> I most recently worked as a Design Engineer at &nbsp; <span> <Odysee/> </span> <a class=' font-bold hover:underline' target="_blank" href='https://odysee.com/'>Odysee</a>, one of the largest decentralized video-sharing platform.</span> 
+      </p>
+      {/if}
         <div 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {4 * 0.2}s; opacity: 0; transform: translateY(10px);"
         class="mt-[30px] w-full flex items-center">
@@ -59,7 +80,7 @@ const links = [
         <a 
         target="_blank"
         href='https://calendar.app.google/4PWEEC1grsbukDpe9'
-        class='text-[#000] w-fit p-[10px] ml-[30px] h-[30px] rounded-2xl flex items-center justify-center '>
+        class='text-[#000] w-fit p-[10px] ml-[30px]  h-[45px] rounded-[15px] flex items-center justify-center border border-gray-400'>
           Book a Call <ArrowUpRight size={15}/>
         </a>
         </div>
@@ -67,9 +88,9 @@ const links = [
   
       <div class="flex gap-4 my-[20px] md:mt-0 mt-[50px] font-fraunces font-light!">
         <div class="flex flex-col items-start justify-center gap-2">
-          {#each links.slice(0,4) as item, index (item.name)}
+          {#each links.slice(0,5) as item, index (item.name)}
           <a
-            class="group text-[1.6rem] flex items-center gap-1 text-[#181b21] hover:text-primary transition-all duration-300 relative overflow-hidden"
+            class="group text-[1.4rem] flex items-center gap-1 text-[#181b21] hover:text-primary transition-all duration-300 relative overflow-hidden"
             href={item.link}
             target="_blank"
             style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {index * 0.2}s; opacity: 0; transform: translateY(10px);"
@@ -93,15 +114,16 @@ const links = [
               ></span>
             </span>
             <ArrowUpRight
+              size={14}
               class="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 text-[#7a8293]"
             />
           </a>
         {/each}
         </div>
         <div class="flex flex-col items-start justify-start gap-2">
-          {#each links.slice(4,8) as item, index (item.name)}
+          {#each links.slice(5,10) as item, index (item.name)}
           <a
-            class="group text-[1.6rem] flex items-center gap-1 text-[#181b21] hover:text-primary transition-all duration-300 relative overflow-hidden"
+            class="group text-[1.4rem] flex items-center gap-1 text-[#181b21] hover:text-primary transition-all duration-300 relative overflow-hidden"
             href={item.link}
             target="_blank"
             style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {index * 0.2}s; opacity: 0; transform: translateY(10px);"
@@ -125,6 +147,7 @@ const links = [
               ></span>
             </span>
             <ArrowUpRight
+            size={14}
               class="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 text-[#7a8293]"
             />
           </a>

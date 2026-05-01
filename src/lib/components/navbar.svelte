@@ -13,13 +13,14 @@ const menuItems: {
 }[] = [
   { path: "#work", label: "Work"},
   { path: "#about", label: "About me"},
-  { path: "#dump", label: "Archive"},
+  { path: "/gallery", label: "Gallery"},
 ];
 
 import { onMount } from 'svelte';
 import clsx from 'clsx';
 import { Menu } from '@lucide/svelte';
 import MobileNav from './mobile-nav.svelte';
+  import { goto } from '$app/navigation';
 
 let greetings: string[] = [];
 let currentGreeting = '';
@@ -29,12 +30,13 @@ $:isActive=false;
 
 function handleNavClick(event: MouseEvent, path: string) {
   event.preventDefault();
-  
-  window.history.pushState(null, '', path);
-  
-  dispatch('navigate', { hash: path });
-}
 
+  if (path.startsWith('#')) {
+    smoothScrollTo(path);
+  } else {
+    goto(path);
+  }
+}
 function getTimePeriod(): 'morning' | 'afternoon' | 'evening' {
   const hour = new Date().getHours();
   if (hour < 12) return 'morning';

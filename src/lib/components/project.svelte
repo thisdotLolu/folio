@@ -9,18 +9,18 @@
 
 <a 
   href="/projects/{link}?tab={activeTab}"
-  class="relative h-[300px] md:w-[100%] w-[94vw] shadow-[1px_1px_20px_1px_rgba(0,0,0,0.1)] border-[#fff] rounded-[10px] border-[4px] overflow-hidden bg-[#fff]"
+  class="relative h-[300px] md:w-[100%] w-[94vw] shadow-[1px_1px_20px_1px_rgba(0,0,0,0.1)] border-[#fff] rounded-[20px] border-[10px] overflow-hidden bg-[#fff]"
 >
 
   <!-- class="relative h-[300px] md:w-[385px] w-[94vw] shadow-[1px_1px_20px_1px_rgba(0,0,0,0.1)] border-[#fff] rounded-[10px] border-[4px] overflow-hidden bg-gradient-to-br from-[#fbc2eb] via-[#a6c1ee] to-[#fbc2eb]/50" -->
   <img
-    class="w-full object-contain"
+    class="w-full object-contain rounded-[10px]"
     srcset={img}
     alt={title}
   />
 
 
-  <div class="absolute bottom-0 flex items-center justify-between left-0 w-full px-4 py-2 bg-white backdrop-blur-xl text-black">
+  <div class="absolute bottom-0 flex items-center justify-between left-0 w-full px-2 py-2 bg-white backdrop-blur-xl text-black">
     <div class="w-[100%]">
       <p class="text-sm font-semibold">{title}</p>
       <p class="text-xs text-[#7a8293]">{shortDescription}</p>

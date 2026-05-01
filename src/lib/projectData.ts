@@ -39,26 +39,42 @@ export const devProjects:DevProject[] = [
     ]
   },
     {
-      name:'degendevs',
+      name:'blocknite',
       img: '/covers/degendevs-min.png',
-      title: 'Degen Devs',
-      link: 'https://degendevs.com',
-      role:'Core member of the Fullstack Development team',
-      toolsUsed:'React, Nextjs, Nodejs',
-      shortDescription: 'Fullstack Developer.',
-      longDescription: `Rebuilt most of the landing page implementation.
+      title: 'Blocknite',
+      link: 'http://blocknite-presale.vercel.app/',
+      role:'Lead Frontend Engineer',
+      toolsUsed:'React, Nextjs, Nodejs, Metaplex',
+      shortDescription: 'Web based Game on Solana.',
+      longDescription: `Involved in this project as a member of https://degendevs.com.
       \n\
       Leading FE development of https://blocknite.io Dapp, working with Spine animations/rendering, Mobile responsive Styling and other complex implementations.
       \n\
-      Worked on other projects including https://exotic.markets , https://betlifesports.com`,
+`,
       tag: 'Development',
       images: [
         '/projects/blocknite-1.png',
         '/projects/blocknite-2.png',
         '/projects/blocknite-3.png',
-        '/projects/blocknite-4.png',
-        '/projects/degendev1.png',
-        '/projects/degendev2.png'
+        '/projects/blocknite-4.png'
+      ]
+    },
+    {
+      name:'exotic-markets',
+      img: '/covers/exotic-m.png',
+      title: 'Exotic Markets',
+      link: 'http://exotic.markets/',
+      role:'Fullstack Engineer',
+      toolsUsed:'React, Nextjs, Nodejs, Solana',
+      shortDescription: 'Decentralized Trading Platform.',
+      longDescription: `Involved in this project as a member of https://degendevs.com.
+      \n\
+      Developed the frontend and backend of https://exotic.markets, a decentralized trading platform on Solana. Implemented complex features such as real-time market data, order book management, and secure wallet integration, ensuring a seamless trading experience for users. Collaborated closely with the team to optimize performance and enhance the user interface, contributing to the successful launch of the platform.`,
+      tag: 'Development',
+      images: [
+        '/projects/exotic-1.png',
+        '/projects/exotic-2.png',
+        '/projects/exotic-3.png',
       ]
     },
     {
@@ -271,9 +287,9 @@ export const devProjects:DevProject[] = [
       slug:'autoecom-dashboard',
       img:'/covers/autoecom-dashboard.png',
       shortDescription:'Ecommerce Logistics Dashboard',
-      longDescription:'Dashboard design for an Ecommerce logistics company that provides shipping and delivery solutions for online stores.',
+      longDescription:'Researched and designed a unified inventory and analytics dashboard integrating Shopify, Ecwid, and Amazon APIs. Focused on data aggregation, order tracking, performance metrics, and AI-assisted insights, with an emphasis on scalable architecture, clear data hierarchy, and efficient UX for multi-channel commerce management.',
       toolsUsed:'Figma',
-      caseStudyLink:'Coming Soon',
+      caseStudyLink:'',
       images: [
         '/projects/autoecom1.png',
         '/projects/autoecom2.png',
@@ -292,17 +308,15 @@ export const devProjects:DevProject[] = [
       ]
     },
     {
-      name:'autoecom',
-      title:'AutoEcom',
-      slug:'autoecom',
-      img:'/covers/autoecomlanding.png',
-      shortDescription:'Ecommerce Logistics Landing Page',
-      longDescription:'Landing page for an Ecommerce logistics company that provides shipping and delivery solutions for online stores.',
-      toolsUsed:'Figma',
-      caseStudyLink:'None yet',
-      images: [
-        '/projects/autoecom-landing.png',
-      ]
+      name:'Landing Pages',
+      title:'Landing Pages',
+      slug:'landing-pages',
+      img:'/covers/landers.png',
+      shortDescription:'Landing pages for various startups and companies.',
+      longDescription:'Designed and developed landing pages for various startups and companies, focusing on clear messaging, compelling visuals, and conversion optimization. Each landing page was tailored to the specific brand and target audience, utilizing best practices in UX/UI design to drive engagement and achieve business goals.',
+      toolsUsed:'Figma, Framer, Webflow',
+      caseStudyLink:'https://www.figma.com/design/TpLNTnWDV1pYgq4tyh3RCd/LANDING-PAGES?node-id=0-1&t=thyCFfYJt9xXYAWw-1',
+      images: ['']
     },
     {
       name:'vently',
@@ -312,7 +326,7 @@ export const devProjects:DevProject[] = [
       shortDescription:'Event Management Mobile Application',
       longDescription:'Vently is a mobile application that allows users to discover, create, and manage events seamlessly. The app provides features such as event creation, ticketing, social sharing, and real-time updates to enhance the event experience for both organizers and attendees.',
       toolsUsed:'Figma',
-      caseStudyLink:'None yet',
+      caseStudyLink:'',
       images: [
         '/projects/vently1.png',
         '/projects/vently37.png',
@@ -372,44 +386,6 @@ export const devProjects:DevProject[] = [
       ]
     },
     {
-      name:'testnet',
-      title:'Testnet',
-      slug:'testnet',
-      img:'/covers/tstnet-min.png',
-      shortDescription:'Startup Landing Page',
-      longDescription:'Built a startup landing page for a System for automating production applications testing',
-      toolsUsed:'Figma',
-      caseStudyLink:'',
-      images: [
-        '/projects/testnet.png'
-      ]
-    },
-      {
-      name:'omie',
-      title:'Omie',
-      slug:'omie',
-      img:'/covers/omie-min.png',
-      shortDescription:'Mental Wellness Landing Page',
-      toolsUsed:'Figma',
-      caseStudyLink:'',
-      images: [
-        '/projects/omie-landing.png'
-      ]
-    },
-    {
-      name:'schedule-drop',
-      title:'Schedule Drop',
-      slug:'schedule-drop',
-      img:'/covers/scheduledrop-min.png',
-      shortDescription:'CRM Landing Page',
-      longDescription:'A landing page for a CRM tool for cleaning businesses and cleaning company owners',
-      toolsUsed:'Figma',
-      caseStudyLink:'',
-      images: [
-        '/projects/sheduledrop.png'
-      ]
-    },
-    {
       name:'schedule-drop-dashboard',
       title:'Schedule Drop',
       slug:'schedule-drop-dashboard',
@@ -436,7 +412,7 @@ export const devProjects:DevProject[] = [
       title:'Pet Health',
       slug:'pet-health',
       img:'/covers/pethealth-min.png',
-      shortDescription:'Mobile application for managing Pet medications and Treatments',
+      shortDescription:'Mobile app for pet health management.',
       toolsUsed:'Figma',
       longDescription:'The mobile app helps pet owners manage their pets’ lives, including social sharing, messaging, exploring pet-friendly locations, and tracking health activities like treatments, vaccines, and health records.',
       caseStudyLink:'https://loludavid.notion.site/Full-Case-Study-1cb0d58b34778030a19dda84ed927cb3',
@@ -455,31 +431,156 @@ export const devProjects:DevProject[] = [
         '/projects/pethealth12.png',
       ]
     },
-    // {
-    //   name:'golden-vault',
-    //   title:'Golden Vault',
-    //   slug:'golden-vault',
-    //   img:'/covers/goldenvault-min.png',
-    //   shortDescription:'Community Landing Page',
-    //   toolsUsed:'Figma',
-    //   caseStudyLink:'',
-    //   images: [
-    //     '/projects/goldenvault.png'
-    //   ]
-    // },
-    // {
-    //   name:'henry-ai',
-    //   title:'Henry AI',
-    //   slug:'henry-ai',
-    //   img:'/covers/henryai-min.png',
-    //   shortDescription:'AI Startup Landing Page',
-    //   toolsUsed:'Figma',
-    //   caseStudyLink:'',
-    //   images: [
-    //     '/projects/henryai.png'
-    //   ]
-    // },
   ]
+
+
+  export const landingPageProjects = [
+  {
+    name: 'Stacknet',
+    title: 'Stacknet',
+    slug: 'stacknet',
+    img: 'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878450/stackt-5_r80tcu.webp',
+    shortDescription: 'Startup website for Stacknet.',
+    toolsUsed: 'Webflow, Figma, GSAP',
+    tag: 'Webflow',
+    link: 'https://stack-net.webflow.io',
+    images: [
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878460/stackt-1_eozxjn.webp',
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878450/stackt-5_r80tcu.webp',
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878522/stackt-4_jrxvas.webp',
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878450/stackt-6_mktvvu.webp',
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878443/stackt-2_egfovz.webp',
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774879380/stackt-3_zkrva0.webp',
+    ],
+  },
+  {
+    name: 'Schedule Drop',
+    title: 'Schedule Drop',
+    slug: 'schedule-drop',
+    img: 'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878460/sd-2_nrdkit.webp',
+    shortDescription: 'Startup website for ScheduleDrop.',
+    toolsUsed: 'Framer, Figma',
+    tag: 'Framer',
+    link: 'https://scheduledrop.framer.website',
+    images: [
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878460/sd-2_nrdkit.webp',
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878443/sd-3_q4jwjl.webp',
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878442/sd-1_gjjqcl.webp',
+    ],
+  },
+  {
+    name: 'Cythry',
+    title: 'Cythry',
+    slug: 'cythry',
+    img: 'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821055/cyt-1_j7yg9d.webp',
+    shortDescription: 'Business website for Cythry.',
+    toolsUsed: 'Figma, Webflow',
+    tag: 'Webflow',
+    link: 'https://cythry.webflow.io',
+    images: [
+      'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821055/cyt-1_j7yg9d.webp',
+      'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821054/cyt-4_i5dcok.webp',
+      'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821055/cyt-2_vqt9od.webp',
+      'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821053/cyt-3_y7ocgd.webp',
+    ],
+  },
+  {
+    name: 'AutoEcom',
+    title: 'AutoEcom',
+    slug: 'autoecom-landing',
+    img: 'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821052/ae-2_nbqbl2.webp',
+    shortDescription: 'Startup website for AutoEcom.',
+    toolsUsed: 'Framer, Figma',
+    tag: 'Framer',
+    link: 'https://autoecom.framer.website',
+    images: [
+      'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821052/ae-2_nbqbl2.webp',
+      'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821053/ae-1_z2gnxo.webp',
+    ],
+  },
+  {
+    name: 'Oncourt',
+    title: 'Oncourt',
+    slug: 'oncourt',
+    img: 'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878374/oncourt-1_rffhxt.webp',
+    shortDescription: 'Basketball Streaming CMS Website.',
+    toolsUsed: 'Webflow, Figma, GSAP',
+    tag: 'Webflow',
+    link: 'https://oncourt-cmstream.webflow.io/',
+    images: [
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878374/oncourt-1_rffhxt.webp',
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878371/onc-1_w75dbz.webp',
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878369/onc-2_djt2zq.webp',
+    ],
+  },
+  {
+    name: 'Ember and Vine',
+    title: 'Ember and Vine',
+    slug: 'ember-and-vine',
+    img: 'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821059/emberandvine_fs8fak.webp',
+    shortDescription: 'Restaurant Website Design and Development.',
+    toolsUsed: 'Framer',
+    tag: 'Framer',
+    link: 'https://emberandvine.framer.website/',
+    images: [
+      'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821059/emberandvine_fs8fak.webp',
+      'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821057/ev-4_bqbjjv.webp',
+      'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821057/ev-2_aylm3m.webp',
+      'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821056/ev-3_bk9gpz.webp',
+      'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821089/ev-5_dglh4x.webp',
+      'https://res.cloudinary.com/dpnulun4a/image/upload/v1774822851/ev-6_dqx3rp.webp',
+    ],
+  },
+  {
+    name: 'Portfolio',
+    title: 'Portfolio',
+    slug: 'portfolio',
+    img: 'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821053/alex-chen-1_oaetzu.webp',
+    shortDescription: 'Portfolio Website Design and Development.',
+    toolsUsed: 'Framer',
+    tag: 'Framer',
+    link: 'https://alexchen.framer.website/',
+    images: [
+      'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821053/alex-chen-1_oaetzu.webp',
+    ],
+  },
+   {
+    name: 'Cythority',
+    title: 'Cythority',
+    img: 'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878291/new-cyt-4_cvwwbc.webp',
+    slug: 'cythority',
+    link: 'https://cythority.com/',
+    shortDescription: 'Cybersecurity website with multi-vertical architecture.',
+    longDescription: 'Researched, designed, and developed a cybersecurity website for Cythority, structuring three core verticals—MSSP, vSOC, and AI incubator with staffing solutions—into a clear, modular information architecture. Focused on content segmentation, scalable layout systems, and conversion-driven UX to effectively communicate distinct service offerings while maintaining a cohesive brand experience.',
+    tag: 'Javascript',
+    toolsUsed: 'Javascript, Framer motion, Figma',
+    images: [
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878291/new-cyt-4_cvwwbc.webp',
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878286/new-cyt-2_bsovyw.webp',
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878291/new-cyt-3_fqiwvs.webp',
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878284/new-cyt-1_fb4ny2.webp',
+    ],
+    figma: 'https://www.figma.com/design/TpLNTnWDV1pYgq4tyh3RCd/LANDING-PAGES?node-id=0-1&t=thyCFfYJt9xXYAWw-1'
+  },
+  {
+    name: 'GLDC',
+    title: 'GLDC',
+    img: 'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878099/gldc-1_twzkem.webp',
+    slug: 'gldc',
+    link: 'https://gldc.world/',
+    shortDescription: 'Crypto Website Design and Development.',
+    longDescription: 'Designed and developed a crypto-focused platform for gold-backed assets, enabling gold swapping and investment insights. Structured features around asset valuation, swap flows, and informational content, with a focus on secure UX patterns, clear data presentation, and conversion-oriented design',
+    tag: 'Javascript',
+    role: 'Designer and JavaScript Developer',
+    toolsUsed: 'Javascript, Framer motion, Figma',
+    images: [
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878089/gldc-2_jbgwx0.webp',
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878099/gldc-1_twzkem.webp',
+      'https://res.cloudinary.com/dl5iyq6cp/image/upload/v1774878131/gldc-3_ebiug1.webp',
+    ],
+    figma: 'https://www.figma.com/design/TpLNTnWDV1pYgq4tyh3RCd/LANDING-PAGES?node-id=0-1&t=thyCFfYJt9xXYAWw-1'
+  },
+];
 
 
   export type DevProject = {

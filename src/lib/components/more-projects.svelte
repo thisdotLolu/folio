@@ -1,10 +1,11 @@
 <script lang="ts">
   import { devProjects } from "$lib/projectData";
   export let activeTab;
+  export let skill;
 </script>
 
 
-{#if activeTab === 'Development'}
+{#if activeTab === 'Development' && skill !== 'design'}
 <div class="w-full mt-[20px] pb-[20px] border-t border-[#5b5b5b]">
   <p
     class="my-6 text-[.9rem] md:text-[1.3rem] tracking-[-.5px] w-full text-start"

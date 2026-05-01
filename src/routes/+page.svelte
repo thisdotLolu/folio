@@ -68,6 +68,7 @@ import { tweened } from "svelte/motion";
 
 
 let activeTab = $page.url.searchParams.get("tab") || "Development";
+let skill = $page.url.searchParams.get("skill") || "dev";
 $: isOverlayVisible = $overlayOpacity > 0 ;
 $: overlayIntensity = $overlayOpacity;
 
@@ -77,7 +78,7 @@ $:console.log($overlayOpacity)
 
 <svelte:head>
   <title>Lolu - Developer and Designer</title>
-  <meta name="description" content="Lolu is a full-stack developer and UI/UX designer specializing in creating modern, responsive web applications. Explore my portfolio to see my work." />
+  <meta name="description" content="software craftsman" />
 </svelte:head>
 
 <div class="relative min-h-screen w-full overflow-x-hidden">
@@ -92,21 +93,21 @@ $:console.log($overlayOpacity)
     bind:isOverlayVisible
     />
     <div class="w-full">
-    <Hero />
+    <Hero {activeTab} {skill}/>
     </div>
     <div 
     id='work'
-    class=" mt-[50px] md:mt-[100px] flex flex-col items-center justify-center w-full md:px-10 px-4">
-      <Subnav bind:activeTab />
-      <Projects {activeTab} />
-      <MoreProjects {activeTab}/>
+    class="mt-[50px] flex flex-col items-center justify-center w-full md:px-10 px-4">
+      <Subnav bind:activeTab {skill} />
+      <Projects {activeTab} {skill} />
+      <MoreProjects {activeTab} {skill}/>
     </div>
   </div>
   <div bind:this={triggerSection} class='w-full'>
      <section id="about" class="bg-transparent py-[100px] h-[1000px] w-full">
-    <About/>
+    <About {skill}/>
   </section>
-  <div class="md:mt-[420px] mt-[800px] pt-[200px] bg-[black]">
+  <div class="overflow-x-hidden bg-[black]">
   <Footer/>
   </div>
 </div>
