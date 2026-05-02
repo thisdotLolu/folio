@@ -91,7 +91,7 @@ $: overlayIntensity = $overlayOpacity;
     bind:isOverlayVisible
     />
     <div class="w-full">
-    <Hero {activeTab} {skill}/>
+    <Hero {skill}/>
     </div>
     <div 
     id='work'

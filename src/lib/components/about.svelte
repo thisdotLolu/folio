@@ -31,7 +31,7 @@ register();
         <div 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.2}s; opacity: 0; transform: translateY(10px);"
         class='font-fraunces flex flex-col items-start justify-start md:text-[4rem] text-[3.4rem] md:w-[40%] w-full text-[#d3d3d3] tracking-[-2px] md:leading-[60px] leading-[50px]'>
-            {#if skill === 'design' || skill === 'Design'}
+            {#if skill?.toLowerCase() === 'design'}
             Product Designer & Nocode Developer
               <div 
             style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.3}s; opacity: 0; transform: translateY(10px);"
@@ -70,7 +70,7 @@ register();
         <div 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.5}s; opacity: 0; transform: translateY(10px);"
         class='text-[#d3d3d3] text-[1.1rem] md:w-[55%] w-full'>
-        {#if skill !== 'design'}
+        {#if skill?.toLowerCase() !== 'design'}
            I'm a multidisciplinary software engineer and designer with 5+ years of experience building user-focused products and scalable systems. My work blends clean code with elegant UI—solving real business problems with tools like Figma, React, SvelteKit, Nodejs etc.
             I've worked across Fintech, Blockchain, Education, and Ecommerce, partnering with companies across Africa, Europe and the U.S. From MVPs to dashboards, I bring clarity and purpose to every screen I touch.
             Currently open to new opportunities—contract or full-time—where I can help design and build thoughtful digital experiences.
@@ -80,7 +80,7 @@ register();
           I've built complex design systems to ensure scalability and consistency within components on large scale design projects.
           I've also experienced the ins and outs of no-code tools so you don't have to. I've navigated and mastered the features of no-code tools like Webflow and Framer. I'm not your average no-code developer I don't just drag and drop elements. I leverage custom code to push the boundaries of what no-code tools can achieve, creating unique and innovative web experiences.
         {/if}
-           {#if skill !== 'design'}
+           {#if skill?.toLowerCase() !== 'design'}
             <a 
             target="_blank"
             href='https://docs.google.com/document/d/1mmzcDGl5LxWBnvOTtY5RSCFmaanbn6sv'
