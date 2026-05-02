@@ -31,7 +31,7 @@ register();
         <div 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.2}s; opacity: 0; transform: translateY(10px);"
         class='font-fraunces flex flex-col items-start justify-start md:text-[4rem] text-[3.4rem] md:w-[40%] w-full text-[#d3d3d3] tracking-[-2px] md:leading-[60px] leading-[50px]'>
-            {#if skill === 'design'}
+            {#if skill === 'design' || skill === 'Design'}
             Product Designer & Nocode Developer
               <div 
             style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.3}s; opacity: 0; transform: translateY(10px);"

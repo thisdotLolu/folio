@@ -5,8 +5,6 @@ import me from '../assets/me/me.jpg'
 
 export let isOverlayVisible = false;
 
-const dispatch = createEventDispatcher();
-
 const menuItems: {
   path: string;
   label: string;
@@ -21,6 +19,7 @@ import clsx from 'clsx';
 import { Menu } from '@lucide/svelte';
 import MobileNav from './mobile-nav.svelte';
   import { goto } from '$app/navigation';
+  import { browser } from '$app/environment';
 
 let greetings: string[] = [];
 let currentGreeting = '';
@@ -54,6 +53,10 @@ function getTimePeriod(): 'morning' | 'afternoon' | 'evening' {
     });
   }
 }
+
+  function nav_back() {
+    if (browser) window.history.back();
+  }
 
 
 onMount(async () => {
@@ -130,13 +133,13 @@ onMount(async () => {
 <div class="font-inter w-full md:px-10 px-2 h-[60px] py-[10px] fixed left-0 top-0 z-50 bg-white/10 backdrop-blur-xl shadow-lg border-b border-white/20">
   <div class='!max-w-[1200px] flex items-center justify-between mx-auto'>
     <div class='flex items-center gap-1 h-full'>
-      <a href='/'>
+      <button on:click={nav_back}>
         <img
-          class='border-[#fff] border-[2px] rounded-md h-[35px] w-[35px] object-cover shadow-md'
+          class='border-[#fff] cursor-pointer border-[2px] rounded-md h-[35px] w-[35px] object-cover shadow-md'
           src={me}
           alt='Lolu David'
         />    
-      </a>
+      </button>
       
       <div class={clsx('md:text-[1.4rem] text-[1.1rem] tracking-[-1px] ', isOverlayVisible?'text-[#d3d3d3]':'text-[#181b21]')}>
         lolu/<span class='text-[#7a8293]'>david</span>/lu .

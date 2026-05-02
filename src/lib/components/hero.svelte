@@ -38,7 +38,7 @@ const links = [
         <span 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.2}s; opacity: 0; transform: translateY(10px);"
         class='animation: fadeInUp font-regular md:tracking-[-3px] leading-[55px] tracking-tighter text-[2.4rem] md:text-[2.7rem] font-fraunces font-light'>Hi there,  <span class='text-[#838486]'>I'm Lolu.</span></span>
-        {#if skill === 'design'}
+        {#if skill === 'design' || skill === 'Design'}
          <div 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {2 * 0.2}s; opacity: 0; transform: translateY(10px);"
         class="mb-[5px] md:mb-[20px] md:leading-[55px] leading-[45px] animation: fadeInUp tracking-tighter md:tracking-[-3px] text-[2.5rem] md:text-[2.7rem] font-fraunces font-light">
