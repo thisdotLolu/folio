@@ -58,7 +58,7 @@ const links = [
         class='text-[#565656] mt-[20px] md:mt-[10px] font-light'>i've gathered over 5 years of experience in software development and UI/UX design across a broad range of industries, I solve product and business problems using tools such as Figma, no-code web and e-commerce store builders, TypeScript, React/Next.js, React Native, SvelteKit, Node.js, and various databases.
          <span class='inline-flex flex-wrap gap-1 mt-3 text-[.9rem] items-center'> I most recently worked as a Design Engineer at &nbsp; <span> <Odysee/> </span> <a class=' font-bold hover:underline' target="_blank" href='https://odysee.com/'>Odysee</a>, one of the largest decentralized video-sharing platform.</span> 
       </p>
-       {:else if skill === 'design'}
+       {:else if skill === 'design' || skill === 'Design'}
         <p 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {3 * 0.2}s; opacity: 0; transform: translateY(10px);"
         class='text-[#565656] mt-[20px] md:mt-[10px] font-light'>i've gathered over 5 years of experience in product design across a broad range of industries, I've designed and built complex design systems, designed complex software user interfaces to solve sophisticated product and business problems using tools such as Figma, no-code web and e-commerce store builders.
