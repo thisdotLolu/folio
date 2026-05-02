@@ -12,7 +12,6 @@
   import Odysee from "./hero-cons/odysee.svelte";
   import Upworkk from "./hero-cons/Integration icons/upworkk.svelte";
   import Dribbble from "./hero-cons/Integration icons/dribbble.svelte";
-  export let activeTab;
   export let skill;
 
 const links = [
