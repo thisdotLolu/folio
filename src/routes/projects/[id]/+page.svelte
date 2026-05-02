@@ -42,10 +42,9 @@
   $: shortDescription = project?.shortDescription || "";
   $: tag = project?.tag || "Design";
 
-  // Single accordion toggle — closed by default
+
   let allImagesOpen = false;
 
-  // Flatten all images across all landing page projects
   $: allLandingImages = landingPageProjects.flatMap((lp) =>
     lp.images.map((img) => ({ img, projectTitle: lp.title }))
   );

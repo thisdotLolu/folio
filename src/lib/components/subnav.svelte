@@ -5,7 +5,7 @@ export let activeTab:string;
 export let skill:string;
 </script>
 
-{#if skill !== 'design'}
+{#if skill.toLowerCase() !== 'design'}
 <div class='w-fit h-[40px] p-[5px] shadow-[1px_1px_20px_1px_rgba(0,0,0,0.1)] rounded-[50px] items-center flex justify-center'>
     <button
     on:click={()=>{
