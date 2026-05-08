@@ -308,6 +308,23 @@ export const devProjects:DevProject[] = [
       ]
     },
     {
+    name: 'agathon',
+    img: 'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821053/agathon-1_cfdaop.webp',
+    title: 'Agathon',
+    slug: 'agathon',
+    link: '',
+    shortDescription: 'All-in-one productivity and learning workspace.',
+    longDescription: 'Researched and designed a modular web application for journaling, note-taking, drawing boards, and PDF annotation tailored for students and teachers. Included features like session timers and content organization systems, with a focus on flexible component architecture, real-time interactions, and an intuitive UX for managing multi-format educational workflows.',
+    tag: 'Figma',
+    role: 'Designer',
+    toolsUsed: 'Figma',
+    images: [
+      'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821054/agathon-2_rgmfdt.webp',
+      'https://res.cloudinary.com/dpnulun4a/image/upload/v1774821053/agathon-1_cfdaop.webp',
+    ],
+    caseStudyLink: 'https://www.figma.com/design/oGGj9zarfBCUiL3GGSAZv4/rushmore?node-id=693-682'
+  },
+    {
       name:'Landing Pages',
       title:'Landing Pages',
       slug:'landing-pages',

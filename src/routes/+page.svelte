@@ -1,18 +1,21 @@
-<script lang='ts'>
-import '../app.css'
-import Navbar from "$lib/components/navbar.svelte";
-import Hero from '$lib/components/hero.svelte';
-import Subnav from '$lib/components/subnav.svelte';
-import Projects from '$lib/components/projects.svelte';
-import { tweened } from "svelte/motion";
+<script lang="ts">
+  import "../app.css";
+  import Navbar from "$lib/components/navbar.svelte";
+  import Hero from "$lib/components/hero.svelte";
+  import Subnav from "$lib/components/subnav.svelte";
+  import Projects from "$lib/components/projects.svelte";
+  import { tweened } from "svelte/motion";
   import { cubicOut } from "svelte/easing";
   import { onMount } from "svelte";
-  import About from '$lib/components/about.svelte';
-  import Lenis from 'lenis';
-  import Footer from '$lib/components/footer.svelte';
-  import { page } from '$app/stores';
-  import MoreProjects from '$lib/components/more-projects.svelte';
+  import About from "$lib/components/about.svelte";
+  import Lenis from "lenis";
+  import Footer from "$lib/components/footer.svelte";
+  import { page } from "$app/stores";
+  import MoreProjects from "$lib/components/more-projects.svelte";
+  import { dev } from '$app/environment';
+  import { inject } from '@vercel/analytics';
 
+  inject({ mode: dev ? 'development' : 'production' });
   const overlayOpacity = tweened(0, { duration: 300, easing: cubicOut });
   let triggerSection: HTMLElement;
 
@@ -24,20 +27,23 @@ import { tweened } from "svelte/motion";
     const scrollY = window.scrollY;
     const maxFadeDistance = 0;
     const startScroll = triggerSection.offsetTop;
-    const fadeValue = Math.min(Math.max((scrollY - startScroll) / maxFadeDistance, 10), 1);
+    const fadeValue = Math.min(
+      Math.max((scrollY - startScroll) / maxFadeDistance, 10),
+      1
+    );
     overlayOpacity.set(fadeValue);
   }
 
   function smoothScrollTo(elementId: string) {
-  const element = document.getElementById(elementId.replace('#', ''));
-  if (element) {
-    element.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-      inline: 'nearest'
-    });
+    const element = document.getElementById(elementId.replace("#", ""));
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
   }
-}
 
   onMount(() => {
     const lenis = new Lenis();
@@ -66,12 +72,10 @@ import { tweened } from "svelte/motion";
     };
   });
 
-
-let activeTab = $page.url.searchParams.get("tab") || "Development";
-let skill = $page.url.searchParams.get("skill") || "dev";
-$: isOverlayVisible = $overlayOpacity > 0 ;
-$: overlayIntensity = $overlayOpacity;
-
+  let activeTab = $page.url.searchParams.get("tab") || "Development";
+  let skill = $page.url.searchParams.get("skill") || "dev";
+  $: isOverlayVisible = $overlayOpacity > 0;
+  $: overlayIntensity = $overlayOpacity;
 </script>
 
 <svelte:head>
@@ -85,29 +89,31 @@ $: overlayIntensity = $overlayOpacity;
     style="background-color: #000; opacity: {$overlayOpacity}; transition: opacity 0.3s ease;"
   ></div>
 
-  <div class="relative z-10 max-w-[1300px] mx-auto flex flex-col items-center justify-start">
-    <Navbar 
-    on:navigate={(event) => smoothScrollTo(event.detail.hash)}
-    bind:isOverlayVisible
+  <div
+    class="relative z-10 max-w-[1300px] mx-auto flex flex-col items-center justify-start"
+  >
+    <Navbar
+      on:navigate={(event) => smoothScrollTo(event.detail.hash)}
+      bind:isOverlayVisible
     />
     <div class="w-full">
-    <Hero {skill}/>
+      <Hero {skill} />
     </div>
-    <div 
-    id='work'
-    class="mt-[50px] flex flex-col items-center justify-center w-full md:px-10 px-4">
+    <div
+      id="work"
+      class="mt-[50px] flex flex-col items-center justify-center w-full md:px-10 px-4"
+    >
       <Subnav bind:activeTab {skill} />
       <Projects {activeTab} {skill} />
-      <MoreProjects {activeTab} {skill}/>
+      <MoreProjects {activeTab} {skill} />
     </div>
   </div>
-  <div bind:this={triggerSection} class='w-full'>
-     <section id="about" class="bg-transparent py-[100px] h-[1000px] w-full">
-    <About {skill}/>
-  </section>
-  <div class="overflow-x-hidden bg-[black] mt-[500px]">
-  <Footer/>
+  <div bind:this={triggerSection} class="w-full">
+    <section id="about" class="bg-transparent py-[100px] h-[1000px] w-full">
+      <About {skill} />
+    </section>
+    <div class="overflow-x-hidden bg-[black] mt-[500px]">
+      <Footer />
+    </div>
   </div>
 </div>
-</div>
-

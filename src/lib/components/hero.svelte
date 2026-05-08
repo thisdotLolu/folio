@@ -41,13 +41,13 @@ const links = [
          <div 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {2 * 0.2}s; opacity: 0; transform: translateY(10px);"
         class="mb-[5px] md:mb-[20px] md:leading-[55px] leading-[45px] animation: fadeInUp tracking-tighter md:tracking-[-3px] text-[2.5rem] md:text-[2.7rem] font-fraunces font-light">
-        <span class='text-[#838486] inline-flex items-center font-fraunces font-light'>Product Designer <DesignerSpan/> </span> focused on crafting and delivering <span class="text-[#ccd0d8] bg-[#000]">intuitive</span> user experiences
+        <span class='text-[#838486] inline-flex items-center font-fraunces font-light'>Product Designer <DesignerSpan/> </span> focused on crafting and delivering <span class="text-[#ccd0d8] bg-[#000] shadow border-[4px] border-white">intuitive</span> user experiences
         </div>
         {:else}
          <div 
         style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {2 * 0.2}s; opacity: 0; transform: translateY(10px);"
         class="mb-[5px] md:mb-[20px] md:leading-[55px] leading-[45px] animation: fadeInUp tracking-tighter md:tracking-[-3px] text-[2.5rem] md:text-[3rem] font-fraunces font-light">
-          a <span class='text-[#838486] inline-flex items-center'>Developer <Span/> </span> and <span class='text-[#838486] inline-flex items-center font-fraunces font-light'>Designer <DesignerSpan/> </span> focused on delivering <span class="text-[#ccd0d8] bg-[#000]">exceptional</span> and  <span class='text-[#ccd0d8] bg-[#000]'>complex software</span>
+          a <span class='text-[#838486] inline-flex items-center'>Developer <Span/> </span> and <span class='text-[#838486] inline-flex items-center font-fraunces font-light'>Designer <DesignerSpan/> </span> focused on delivering <span class="text-[#ccd0d8] bg-[#000] shadow-md border-[5px] border-white px-2">exceptional</span> and  <span class='text-[#ccd0d8] bg-[#000] shadow-md border-[5px] border-white px-2'>complex software</span>
         </div>
         {/if}
         
