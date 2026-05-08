@@ -12,10 +12,10 @@
   import Footer from "$lib/components/footer.svelte";
   import { page } from "$app/stores";
   import MoreProjects from "$lib/components/more-projects.svelte";
-  // import { dev } from '$app/environment';
-  // import { inject } from '@vercel/analytics';
+  import { dev } from '$app/environment';
+  import { inject } from '@vercel/analytics';
 
-  // inject({ mode: dev ? 'development' : 'production' });
+  inject({ mode: dev ? 'development' : 'production' });
   const overlayOpacity = tweened(0, { duration: 300, easing: cubicOut });
   let triggerSection: HTMLElement;
 

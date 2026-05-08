@@ -24,7 +24,7 @@
   const tab = $page.url.searchParams.get("tab") || "Development";
 
   let projectId: string;
-  projectId = $page.params.id;
+  projectId = $page.params.id as string;
   $: isLandingPages = projectId === "Landing Pages";
 
   type Project = DevProject & DesignProject;
