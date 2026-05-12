@@ -325,7 +325,7 @@ export const devProjects:DevProject[] = [
     caseStudyLink: 'https://www.figma.com/design/oGGj9zarfBCUiL3GGSAZv4/rushmore?node-id=693-682'
   },
     {
-      name:'Landing Pages',
+      name:'landing-pages',
       title:'Landing Pages',
       slug:'landing-pages',
       img:'/covers/landers.png',

@@ -25,7 +25,7 @@
 
   let projectId: string;
   projectId = $page.params.id as string;
-  $: isLandingPages = projectId === "Landing Pages";
+  $: isLandingPages = projectId === "landing-pages";
 
   type Project = DevProject & DesignProject;
 
