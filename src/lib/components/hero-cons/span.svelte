@@ -2,9 +2,9 @@
 import Next from "../hero-cons/next.svelte";
 import Node from "../hero-cons/node.svelte";
 import Svlte from "../hero-cons/svlte.svelte";
-import Typescript from "../hero-cons/typescript.svelte";
+import Supabase from "./Integration icons/supabase.svelte";
 </script>
 
 <span class="flex items-center mt-2">
-    <Svlte /> <Node /> <Next /> <Typescript />
+   <Supabase/> <Svlte /> <Node /> <Next /> 
 </span>

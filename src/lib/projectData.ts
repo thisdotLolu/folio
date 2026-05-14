@@ -44,7 +44,7 @@ export const devProjects:DevProject[] = [
       title: 'Blocknite',
       link: 'http://blocknite-presale.vercel.app/',
       role:'Lead Frontend Engineer',
-      toolsUsed:'React, Nextjs, Nodejs, Metaplex',
+      toolsUsed:'Supabase, Nextjs, Nodejs, Metaplex',
       shortDescription: 'Web based Game on Solana.',
       longDescription: `Involved in this project as a member of https://degendevs.com.
       \n\
@@ -65,7 +65,7 @@ export const devProjects:DevProject[] = [
       title: 'Exotic Markets',
       link: 'http://exotic.markets/',
       role:'Fullstack Engineer',
-      toolsUsed:'React, Nextjs, Nodejs, Solana',
+      toolsUsed:'React, Supabase, Nextjs, Nodejs, Solana',
       shortDescription: 'Decentralized Trading Platform.',
       longDescription: `Involved in this project as a member of https://degendevs.com.
       \n\
@@ -112,6 +112,22 @@ export const devProjects:DevProject[] = [
          '/projects/glfzy7.png',
          '/projects/glfzy8.png',
         ]
+    },
+    {
+      name:'orma',
+      img:'/covers/orma-min.png',
+      title: 'Orma',
+      link: 'https://app.ourorma.com/',
+      shortDescription: 'Event photo app.',
+      longDescription: 'Implemented core features like recently viewed, QR scanning, timeline view, and live feeds for the Orma photo management app.',
+      tag: 'Development',
+      role:'Contractual Senior Frontend Engineer',
+      toolsUsed:'React, Supabase',
+      images: [
+       '/projects/orma1.webp',
+       '/projects/orma2.webp',
+       '/projects/orma3.webp',
+      ]
     },
      {
       name:'gldc',
@@ -162,22 +178,6 @@ export const devProjects:DevProject[] = [
         '/projects/taoshi3.webp',
         '/projects/taoshi4.webp',
         '/projects/taoshi5.webp',
-      ]
-    },
-    {
-      name:'orma',
-      img:'/covers/orma-min.png',
-      title: 'Orma',
-      link: 'https://app.ourorma.com/',
-      shortDescription: 'Event photo app.',
-      longDescription: 'Implemented core features like recently viewed, QR scanning, timeline view, and live feeds for the Orma photo management app.',
-      tag: 'Development',
-      role:'Contractual Senior Frontend Engineer',
-      toolsUsed:'React',
-      images: [
-       '/projects/orma1.webp',
-       '/projects/orma2.webp',
-       '/projects/orma3.webp',
       ]
     },
     {
