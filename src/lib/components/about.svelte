@@ -12,9 +12,9 @@
   import Node from "./hero-cons/node.svelte";
   import Svlte from "./hero-cons/svlte.svelte";
   import Typescript from "./hero-cons/typescript.svelte";
-
-import { register } from 'swiper/element/bundle';
+  import { register } from 'swiper/element/bundle';
   import Github2 from "./hero-cons/Integration icons/github2.svelte";
+  import Supabase from "./hero-cons/Integration icons/supabase.svelte";
 
 register();
  const spaceBetween = 10;
@@ -43,7 +43,7 @@ register();
               <div 
             style="animation: fadeInUp 0.6s ease-out forwards; animation-delay: {1 * 0.3}s; opacity: 0; transform: translateY(10px);"
             class="flex flex-wrap items-center justify-start gap-[10px] mt-[30px]">
-                <Svlte/> <Next/> <Typescript/> <Figma/> <Framer/> <Node/> <Github2/> <Webflow/> <Wordpress/> <Mongodb/> <Firebase/> <Docker/> <VsCode/>
+               <Supabase/> <Svlte/> <Next/> <Typescript/> <Figma/> <Framer/> <Node/> <Github2/> <Webflow/> <Wordpress/> <Mongodb/> <Firebase/> <Docker/> <VsCode/>
             </div>
             {/if}
         <div 
