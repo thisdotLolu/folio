@@ -42,7 +42,7 @@ export const devProjects:DevProject[] = [
       name:'blocknite',
       img: '/covers/degendevs-min.png',
       title: 'Blocknite',
-      link: 'http://blocknite-presale.vercel.app/',
+      link: 'http://blocknite-presale.vercel.app/', 
       role:'Lead Frontend Engineer',
       toolsUsed:'Supabase, Nextjs, Nodejs, Metaplex',
       shortDescription: 'Web based Game on Solana.',
@@ -452,6 +452,20 @@ export const devProjects:DevProject[] = [
 
 
   export const landingPageProjects = [
+  {
+    name:'Borgo',
+    title:'Borgo Ecommerce',
+    slug:'borgo',
+    img: '/projects/borgo1.png',
+    shortDescription:'Ecommerce website for Borgo. Filters, Collections and Animations',
+    toolsUsed:'Webflow, GSAP',
+    link:'https://borgo-3e15d1.webflow.io/',
+    images: [
+      '/projects/borgo2.png',
+      '/projects/borgo3.png',
+      '/projects/borgo1.png'
+    ]
+  },
   {
     name: 'Stacknet',
     title: 'Stacknet',

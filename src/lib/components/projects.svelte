@@ -26,7 +26,7 @@
         <Project
         {activeTab}
         img={project.img}
-        link={project.name}
+        link={project.name === 'landing-pages' ? '../landing-pages' : project.name}
         title={project.title}
         shortDescription={project.shortDescription}
         toolsUsed={project.toolsUsed}

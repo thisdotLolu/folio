@@ -1,4 +1,13 @@
 export const carouselData = [
+    'https://res.cloudinary.com/dpnulun4a/image/upload/v1781541096/pubsub1_nvrtaj.png',
+    'https://res.cloudinary.com/dpnulun4a/image/upload/v1781540852/agentic_labs_jtufub.png',
+    'https://res.cloudinary.com/dpnulun4a/image/upload/v1781540849/scritch-ai-sample_sc6wzv.png',
+    'https://res.cloudinary.com/dpnulun4a/image/upload/v1781540846/ubicloud-sample_juujc2.png',
+    'https://res.cloudinary.com/dpnulun4a/image/upload/v1781540850/you-shift-sample_dlxke0.png',
+    'https://res.cloudinary.com/dpnulun4a/image/upload/v1781541099/pubsub-3_gtgyf9.png',
+    'https://res.cloudinary.com/dpnulun4a/image/upload/v1781540848/hunterhow_mg8p7y.png',
+    'https://res.cloudinary.com/dpnulun4a/image/upload/v1781540848/nuanced-2_p36pjm.png',
+    'https://res.cloudinary.com/dpnulun4a/image/upload/v1781540844/quantstruct_nic9gf.png',
     '/projects/explore.2.png',
     '/projects/explore.1.png',
     '/projects/explore.3.png',

@@ -101,8 +101,7 @@ injectAnalytics({ mode: dev ? 'development' : 'production' });
     </div>
     <div
       id="work"
-      class="mt-[50px] flex flex-col items-center justify-center w-full md:px-10 px-4"
-    >
+      class="mt-[50px] flex flex-col items-center justify-center w-full md:px-10 px-4">
       <Subnav bind:activeTab {skill} />
       <Projects {activeTab} {skill} />
       <MoreProjects {activeTab} {skill} />

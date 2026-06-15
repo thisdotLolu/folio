@@ -7,7 +7,7 @@
   const THUMB_W = 80;
   const THUMB_GAP = 4;
 
-  const allImages = [...landingPageProjects, ...designProjects,...carouselData].flatMap((p:any) =>{
+  const allImages = [...carouselData,...landingPageProjects, ...designProjects].flatMap((p:any) =>{
     if(p.images){return p.images}else{return p};
   });
 
