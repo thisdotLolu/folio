@@ -28,7 +28,7 @@
 </script>
 
 <div class="relative font-inter bg-white w-full h-full">
-  <div class="relative z-10 md:max-w-[1350px] mx-auto flex flex-col items-center justify-start">
+  <div class="relative z-10 md:max-w-[1050px] mx-auto flex flex-col items-center justify-start">
     <Navbar on:navigate={(event) => smoothScrollTo(event.detail.hash)} />
 
     <div class="w-full !pt-[100px] md:max-w-[1200px] max-w-[94vw] mx-auto">
@@ -57,7 +57,41 @@
         </p>
       </div>
 
-      <!-- Collapsible images accordion -->
+      <hr class="my-[40px] border-[#7a82933b]" />
+
+      <!-- Grid -->
+      <div class="mb-8">
+
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center">
+          {#each landingPageProjects as lp (lp.slug)}
+            
+             <a href={lp.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="relative h-[300px] md:h-[400px] w-full shadow-[1px_1px_20px_1px_rgba(0,0,0,0.1)] border-[#fff] rounded-[20px] border-[10px] overflow-hidden bg-[#fff]"
+            >
+              <img
+                srcset={lp.img}
+                alt={lp.title}
+                class="w-full object-cover rounded-[10px] h-[75%]"
+              />
+              <div class="absolute bottom-0 left-0 w-full py-2 px-2 bg-white text-black">
+                <p class="text-sm font-semibold">{lp.title}</p>
+                <p class="text-xs text-[#7a8293]">{lp.shortDescription}</p>
+                <div class="flex flex-wrap gap-1 mt-1">
+                  {#each lp.toolsUsed.split(",") as tool (tool)}
+                    <span class="text-[#000] text-[10px] bg-[#f6f8f7] px-2 py-[2px] rounded-full">
+                      {tool.trim()}
+                    </span>
+                  {/each}
+                </div>
+              </div>
+            </a>
+          {/each}
+        </div>
+      </div>
+
+         <!-- Collapsible images accordion -->
       <div class="mb-8 rounded-[16px] border border-[#7a82931a] overflow-hidden">
         <button
           on:click={() => (allImagesOpen = !allImagesOpen)}
@@ -98,42 +132,6 @@
           Designed and developed landing pages for various startups and companies, focusing on clear messaging, compelling visuals, and conversion optimization. Each landing page was tailored to the specific brand and target audience, utilizing best practices in UX/UI design to drive engagement and achieve business goals.
         </p>
       </div>
-
-      <hr class="my-[40px] border-[#7a82933b]" />
-
-      <!-- Grid -->
-      <div class="mb-8">
-        <h2 class="text-2xl font-semibold mb-6 tracking-[-1px]">Landing Pages</h2>
-
-        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center">
-          {#each landingPageProjects as lp (lp.slug)}
-            
-             <a href={lp.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="relative h-[300px] md:h-[400px] w-full shadow-[1px_1px_20px_1px_rgba(0,0,0,0.1)] border-[#fff] rounded-[20px] border-[10px] overflow-hidden bg-[#fff]"
-            >
-              <img
-                srcset={lp.img}
-                alt={lp.title}
-                class="w-full object-cover rounded-[10px] h-[75%]"
-              />
-              <div class="absolute bottom-0 left-0 w-full py-2 px-2 bg-white text-black">
-                <p class="text-sm font-semibold">{lp.title}</p>
-                <p class="text-xs text-[#7a8293]">{lp.shortDescription}</p>
-                <div class="flex flex-wrap gap-1 mt-1">
-                  {#each lp.toolsUsed.split(",") as tool (tool)}
-                    <span class="text-[#000] text-[10px] bg-[#f6f8f7] px-2 py-[2px] rounded-full">
-                      {tool.trim()}
-                    </span>
-                  {/each}
-                </div>
-              </div>
-            </a>
-          {/each}
-        </div>
-      </div>
-
     </div>
   </div>
 
